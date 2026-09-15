@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fichier généré par outils/construire.py à partir de data/explorai-marque.json — ne pas modifier à la main. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://martin-explorai.github.io/explorai-marque/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c00-identite-gouvernance.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c01-logo.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c02-typographie.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c03-palette.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c04-couleur-en-usage.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c05-iconographie.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c06-motif.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c07-tableaux.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c08-graphiques.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c09-ecriture.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c10-supports.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c11-actifs.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c12-document.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c13-contenu-web.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c14-interface.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c15-verification.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://martin-explorai.github.io/explorai-marque/c16-limites.html</loc><lastmod>2026-09-15</lastmod></url>
+</urlset>

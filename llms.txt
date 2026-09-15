@@ -1,0 +1,53 @@
+# Explorai — normes graphiques (dépôt explorai-marque v8.0)
+
+> Référence de la marque Explorai, firme montréalaise en intelligence artificielle et en développement logiciel. Règles applicables (identité, logo, typographie, palette, accents, icônes, motif, tableaux, graphiques, écriture, supports, actifs, document, contenu web, interface, vérification) et fichiers d'actifs téléchargeables. Norme : Normes graphiques Explorai v3 (2026-09). Langue : fr-CA. Version 8.0, 2026-09-15.
+
+Source de vérité unique : https://martin-explorai.github.io/explorai-marque/data/explorai-marque.json. Tous les autres fichiers en sont générés. Pour appliquer la marque : charger ce JSON, puis https://martin-explorai.github.io/explorai-marque/data/explorai-actifs.json pour les URL des images et des polices. Les URL brutes (https://raw.githubusercontent.com/Martin-Explorai/explorai-marque/main/…) fonctionnent aussi sans GitHub Pages.
+
+## Règles essentielles
+
+- Nom en texte courant : Explorai, en un seul mot. Le logo épelle « explor.ai »; cet écart ne passe jamais au texte.
+- Signature : « L’IA au service de vos besoins d’affaires », jamais verrouillée avec le logo.
+- Couleurs : bleu foncé #231651, vert #ACF127, turquoise #2DDCF9, lavande #DA9FEC, rose vibrant #F127AC, White Smoke #F6F6F6 (fond web seulement).
+- Un seul accent par unité de lecture, rotation turquoise, vert, lavande, rose. Le vert marque les totaux et les synthèses. Le rose n'est jamais un texte.
+- Polices : DM Sans + IBM Plex Mono; repli Calibri + Consolas, puis Arial + Courier New; jamais de mélange; aucun italique.
+- Logo : bleu sur fond clair, blanc sur fond bleu ou saturé; zone de protection d'une hauteur de logo; jamais recoloré ni déformé.
+- Icônes : neuf formes, une intention par forme; bleu sur fond clair, vert sur fond bleu; Exploration seule admise en motif.
+- Écriture : 166 250 $, 47 %, « ainsi », majuscules accentuées; espace insécable U+00A0, espace fine insécable U+202F pour les milliers.
+- Tout graphique porte une note de lecture; toute barre part de zéro.
+
+## Données
+
+- [explorai-marque.json](https://martin-explorai.github.io/explorai-marque/data/explorai-marque.json): toutes les règles, structurées — source de vérité
+- [explorai-actifs.json](https://martin-explorai.github.io/explorai-marque/data/explorai-actifs.json): manifeste des logos, icônes, favicons et polices — url, url_brute, format, dimensions, octets, sha256, usage
+- [explorai-jetons.json](https://martin-explorai.github.io/explorai-marque/data/explorai-jetons.json): jetons de design au format DTCG
+- [explorai-jetons.css](https://martin-explorai.github.io/explorai-marque/assets/css/explorai-jetons.css): variables CSS, @font-face, attribut data-accent, focus
+- [explorai-index.json](https://martin-explorai.github.io/explorai-marque/data/explorai-index.json): index du dépôt, sections et URL
+
+## Règles par section (Markdown)
+
+- [c00 — Identité et gouvernance](https://martin-explorai.github.io/explorai-marque/regles/c00-identite-gouvernance.md): Nom, signature, organisation, qui arbitre un écart, cycle de révision.
+- [c01 — Logo](https://martin-explorai.github.io/explorai-marque/regles/c01-logo.md): Deux variantes d'emploi, zone de protection, mesures minimales, interdits, favicon.
+- [c02 — Typographie](https://martin-explorai.github.io/explorai-marque/regles/c02-typographie.md): DM Sans et IBM Plex Mono, trois niveaux de repli, échelle web, fichiers de police.
+- [c03 — Palette](https://martin-explorai.github.io/explorai-marque/regles/c03-palette.md): Valeurs hexadécimales, rôle exclusif de chaque couleur, teintes dérivées, associations.
+- [c04 — Couleur en usage](https://martin-explorai.github.io/explorai-marque/regles/c04-couleur-en-usage.md): Un accent par unité de lecture, rotation, exceptions, implémentation web.
+- [c05 — Iconographie](https://martin-explorai.github.io/explorai-marque/regles/c05-iconographie.md): Neuf formes, leur sens, ce qu'elles ouvrent et n'ouvrent pas, correspondance par livrable.
+- [c06 — Motif](https://martin-explorai.github.io/explorai-marque/regles/c06-motif.md): Emploi de la forme Exploration en fond : taille, position, couleur.
+- [c07 — Tableaux](https://martin-explorai.github.io/explorai-marque/regles/c07-tableaux.md): En-tête bleu, alternance dans l'accent, aucun quadrillage, ligne de total.
+- [c08 — Graphiques](https://martin-explorai.github.io/explorai-marque/regles/c08-graphiques.md): Ordre des séries, grille, axes, base à zéro, types admis, note de lecture.
+- [c09 — Écriture](https://martin-explorai.github.io/explorai-marque/regles/c09-ecriture.md): Conventions typographiques du français, ton de voix.
+- [c10 — Supports](https://martin-explorai.github.io/explorai-marque/regles/c10-supports.md): Règle commune, document, web : rayons, focus, survol, mouvement, densité.
+- [c11 — Actifs](https://martin-explorai.github.io/explorai-marque/regles/c11-actifs.md): Choisir une variante et un format, URL de téléchargement, insertion, nomenclature.
+- [c12 — Gabarit de document](https://martin-explorai.github.io/explorai-marque/regles/c12-document.md): DOCX et PDF : page, rythme, onze styles nommés, types de page, polices, exemple de tableau.
+- [c13 — Contenu web](https://martin-explorai.github.io/explorai-marque/regles/c13-contenu-web.md): Hiérarchie des titres, texte long, mises en valeur, interactif, listes, médias, code.
+- [c14 — Interface d'application](https://martin-explorai.github.io/explorai-marque/regles/c14-interface.md): Principes d'interface produit, composants, états, plancher de qualité.
+- [c15 — Vérification avant diffusion](https://martin-explorai.github.io/explorai-marque/regles/c15-verification.md): Listes de contrôle : tout livrable, document, application.
+- [c16 — Limites](https://martin-explorai.github.io/explorai-marque/regles/c16-limites.md): Ce que le dépôt ne contient pas, contenu non vérifié, points à compléter.
+
+## Optional
+
+- [llms-full.txt](https://martin-explorai.github.io/explorai-marque/llms-full.txt): toutes les sections réunies en un seul fichier Markdown
+- [SKILL.md](https://martin-explorai.github.io/explorai-marque/SKILL.md): mode d'emploi du dépôt comme skill d'agent
+- [Site HTML](https://martin-explorai.github.io/explorai-marque/index.html): les mêmes règles, mises en page pour les personnes
+- [CHANGELOG.md](https://martin-explorai.github.io/explorai-marque/CHANGELOG.md): journal des versions
+- [Dépôt GitHub](https://github.com/Martin-Explorai/explorai-marque): sources et historique

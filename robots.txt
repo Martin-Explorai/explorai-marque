@@ -1,0 +1,7 @@
+# Explorai — normes graphiques v8.0. Fichier généré par outils/construire.py à partir de data/explorai-marque.json — ne pas modifier à la main.
+# Contenu public, destiné à être lu et appliqué par des personnes et des agents.
+# Point d'entrée pour un agent : https://martin-explorai.github.io/explorai-marque/llms.txt puis https://martin-explorai.github.io/explorai-marque/data/explorai-marque.json
+User-agent: *
+Allow: /
+
+Sitemap: https://martin-explorai.github.io/explorai-marque/sitemap.xml
