@@ -1,0 +1,55 @@
+/* =====================================================================
+   Explorai — jetons de design
+   Version  : v8.0 — 2026-09-15
+   Norme    : Normes graphiques Explorai v3 (2026-09)
+   Fichier généré par outils/construire.py à partir de data/explorai-marque.json — ne pas modifier à la main.
+   URL      : https://martin-explorai.github.io/explorai-marque/assets/css/explorai-jetons.css
+   ===================================================================== */
+
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/DMSans-Regular.woff2') format('woff2');}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:500;font-display:swap;src:url('../fonts/DMSans-Medium.woff2') format('woff2');}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:600;font-display:swap;src:url('../fonts/DMSans-SemiBold.woff2') format('woff2');}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;font-display:swap;src:url('../fonts/DMSans-Bold.woff2') format('woff2');}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url('../fonts/IBMPlexMono-Regular.woff2') format('woff2');}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:swap;src:url('../fonts/IBMPlexMono-Medium.woff2') format('woff2');}
+
+:root{
+  /* couleurs */
+  --blue:#231651;  /* Bleu foncé */
+  --green:#ACF127;  /* Vert */
+  --cyan:#2DDCF9;  /* Turquoise */
+  --lavender:#DA9FEC;  /* Lavande */
+  --pink:#F127AC;  /* Rose vibrant */
+  --paper:#F6F6F6;  /* White Smoke */
+  --ink:#3B3550;  /* Encre */
+  --ink-pale:#71658D;  /* Encre pâle */
+  --veil:#D9D4E4;  /* Voile */
+  --neutral:#F2F1F5;  /* Neutre */
+  --rule:#DEDBE6;  /* Filet */
+  --grid:#EFEDF3;  /* Grille */
+  --black:#231F20;  /* Noir */
+  --white:#FFFFFF;  /* Blanc */
+  /* teintes dérivées 10 % / 22 % */
+  --cyan-10:#EAFCFE;  --cyan-22:#D1F7FE;
+  --green-10:#F7FEE9;  --green-22:#EDFCD0;
+  --lav-10:#FBF5FD;  --lav-22:#F7EAFB;
+  --pink-10:#FEE9F7;  --pink-22:#FCD0ED;
+  /* accent courant, redéfini par [data-accent] */
+  --accent:var(--cyan); --accent-10:var(--cyan-10); --accent-22:var(--cyan-22);
+  /* polices : pile web étendue (voir section c02) */
+  --font-sans:'DM Sans', 'Calibri', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono:'IBM Plex Mono', 'Consolas', 'SF Mono', Menlo, 'Courier New', monospace;
+  /* rayons */
+  --radius-petits-elements:8px;
+  --radius-cartes:14px;
+  --radius-blocs-pleine-largeur:20px;
+  --radius-boutons-et-etiquettes:999px;
+}
+
+[data-accent="cyan"]{--accent:var(--cyan);--accent-10:var(--cyan-10);--accent-22:var(--cyan-22);}
+[data-accent="green"]{--accent:var(--green);--accent-10:var(--green-10);--accent-22:var(--green-22);}
+[data-accent="lavender"]{--accent:var(--lavender);--accent-10:var(--lav-10);--accent-22:var(--lav-22);}
+[data-accent="pink"]{--accent:var(--pink);--accent-10:var(--pink-10);--accent-22:var(--pink-22);}
+
+/* focus normé : turquoise 3 px, décalé de 3 px, jamais supprimé */
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;}
