@@ -1,0 +1,242 @@
+{
+  "avertissement": "Fichier généré par outils/construire.py à partir de data/explorai-marque.json — ne pas modifier à la main.",
+  "identifiant": "explorai-marque",
+  "version": "8.0",
+  "date_version": "2026-09-15",
+  "norme": {
+    "nom": "Normes graphiques Explorai v3",
+    "date": "2026-09"
+  },
+  "langue": "fr-CA",
+  "depot": "https://github.com/Martin-Explorai/explorai-marque",
+  "url_site": "https://martin-explorai.github.io/explorai-marque/",
+  "url_brute": "https://raw.githubusercontent.com/Martin-Explorai/explorai-marque/main/",
+  "source_de_verite": {
+    "chemin": "data/explorai-marque.json",
+    "url": "https://martin-explorai.github.io/explorai-marque/data/explorai-marque.json",
+    "url_brute": "https://raw.githubusercontent.com/Martin-Explorai/explorai-marque/main/data/explorai-marque.json"
+  },
+  "ordre_de_lecture": [
+    "llms.txt",
+    "data/explorai-marque.json",
+    "data/explorai-actifs.json",
+    "regles/",
+    "regles/c15-verification.md"
+  ],
+  "fichiers": [
+    {
+      "chemin": "llms.txt",
+      "role": "orientation",
+      "genere": true
+    },
+    {
+      "chemin": "llms-full.txt",
+      "role": "texte intégral Markdown",
+      "genere": true
+    },
+    {
+      "chemin": "data/explorai-marque.json",
+      "role": "règles — source de vérité",
+      "genere": false
+    },
+    {
+      "chemin": "data/explorai-actifs.json",
+      "role": "manifeste des actifs",
+      "genere": true
+    },
+    {
+      "chemin": "data/explorai-jetons.json",
+      "role": "jetons DTCG",
+      "genere": true
+    },
+    {
+      "chemin": "data/explorai-index.json",
+      "role": "index",
+      "genere": true
+    },
+    {
+      "chemin": "assets/css/explorai-jetons.css",
+      "role": "jetons CSS",
+      "genere": true
+    },
+    {
+      "chemin": "assets/css/explorai-site.css",
+      "role": "mise en page du site",
+      "genere": false
+    },
+    {
+      "chemin": "SKILL.md",
+      "role": "skill d'agent",
+      "genere": true
+    },
+    {
+      "chemin": "README.md",
+      "role": "accueil GitHub",
+      "genere": true
+    },
+    {
+      "chemin": "CHANGELOG.md",
+      "role": "journal des versions",
+      "genere": false
+    },
+    {
+      "chemin": "VERSION",
+      "role": "numéro de version",
+      "genere": true
+    },
+    {
+      "chemin": "outils/construire.py",
+      "role": "générateur",
+      "genere": false
+    }
+  ],
+  "sections": [
+    {
+      "id": "c00",
+      "titre": "Identité et gouvernance",
+      "resume": "Nom, signature, organisation, qui arbitre un écart, cycle de révision.",
+      "pointeur_json": "#/identite",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c00-identite-gouvernance.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c00-identite-gouvernance.html"
+    },
+    {
+      "id": "c01",
+      "titre": "Logo",
+      "resume": "Deux variantes d'emploi, zone de protection, mesures minimales, interdits, favicon.",
+      "pointeur_json": "#/logo",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c01-logo.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c01-logo.html"
+    },
+    {
+      "id": "c02",
+      "titre": "Typographie",
+      "resume": "DM Sans et IBM Plex Mono, trois niveaux de repli, échelle web, fichiers de police.",
+      "pointeur_json": "#/typographie",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c02-typographie.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c02-typographie.html"
+    },
+    {
+      "id": "c03",
+      "titre": "Palette",
+      "resume": "Valeurs hexadécimales, rôle exclusif de chaque couleur, teintes dérivées, associations.",
+      "pointeur_json": "#/couleurs",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c03-palette.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c03-palette.html"
+    },
+    {
+      "id": "c04",
+      "titre": "Couleur en usage",
+      "resume": "Un accent par unité de lecture, rotation, exceptions, implémentation web.",
+      "pointeur_json": "#/couleur_en_usage",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c04-couleur-en-usage.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c04-couleur-en-usage.html"
+    },
+    {
+      "id": "c05",
+      "titre": "Iconographie",
+      "resume": "Neuf formes, leur sens, ce qu'elles ouvrent et n'ouvrent pas, correspondance par livrable.",
+      "pointeur_json": "#/iconographie",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c05-iconographie.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c05-iconographie.html"
+    },
+    {
+      "id": "c06",
+      "titre": "Motif",
+      "resume": "Emploi de la forme Exploration en fond : taille, position, couleur.",
+      "pointeur_json": "#/motif",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c06-motif.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c06-motif.html"
+    },
+    {
+      "id": "c07",
+      "titre": "Tableaux",
+      "resume": "En-tête bleu, alternance dans l'accent, aucun quadrillage, ligne de total.",
+      "pointeur_json": "#/tableaux",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c07-tableaux.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c07-tableaux.html"
+    },
+    {
+      "id": "c08",
+      "titre": "Graphiques",
+      "resume": "Ordre des séries, grille, axes, base à zéro, types admis, note de lecture.",
+      "pointeur_json": "#/graphiques",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c08-graphiques.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c08-graphiques.html"
+    },
+    {
+      "id": "c09",
+      "titre": "Écriture",
+      "resume": "Conventions typographiques du français, ton de voix.",
+      "pointeur_json": "#/ecriture",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c09-ecriture.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c09-ecriture.html"
+    },
+    {
+      "id": "c10",
+      "titre": "Supports",
+      "resume": "Règle commune, document, web : rayons, focus, survol, mouvement, densité.",
+      "pointeur_json": "#/supports",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c10-supports.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c10-supports.html"
+    },
+    {
+      "id": "c11",
+      "titre": "Actifs",
+      "resume": "Choisir une variante et un format, URL de téléchargement, insertion, nomenclature.",
+      "pointeur_json": "#/actifs",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c11-actifs.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c11-actifs.html"
+    },
+    {
+      "id": "c12",
+      "titre": "Gabarit de document",
+      "resume": "DOCX et PDF : page, rythme, onze styles nommés, types de page, polices, exemple de tableau.",
+      "pointeur_json": "#/document_gabarit",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c12-document.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c12-document.html"
+    },
+    {
+      "id": "c13",
+      "titre": "Contenu web",
+      "resume": "Hiérarchie des titres, texte long, mises en valeur, interactif, listes, médias, code.",
+      "pointeur_json": "#/contenu_web",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c13-contenu-web.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c13-contenu-web.html"
+    },
+    {
+      "id": "c14",
+      "titre": "Interface d'application",
+      "resume": "Principes d'interface produit, composants, états, plancher de qualité.",
+      "pointeur_json": "#/interface",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c14-interface.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c14-interface.html"
+    },
+    {
+      "id": "c15",
+      "titre": "Vérification avant diffusion",
+      "resume": "Listes de contrôle : tout livrable, document, application.",
+      "pointeur_json": "#/verification",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c15-verification.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c15-verification.html"
+    },
+    {
+      "id": "c16",
+      "titre": "Limites",
+      "resume": "Ce que le dépôt ne contient pas, contenu non vérifié, points à compléter.",
+      "pointeur_json": "#/limites",
+      "markdown": "https://martin-explorai.github.io/explorai-marque/regles/c16-limites.md",
+      "html": "https://martin-explorai.github.io/explorai-marque/c16-limites.html"
+    }
+  ],
+  "actifs": {
+    "total": 83,
+    "manifeste": "https://martin-explorai.github.io/explorai-marque/data/explorai-actifs.json",
+    "motifs_de_chemin": {
+      "logo": "assets/img/logo/explorai-logo-{bleu|blanc|vert}.{svg|png}",
+      "icone": "assets/img/icones/explorai-icone-{forme}-{bleu|vert|blanc}.{svg|png}",
+      "icone_couleur_heritee": "assets/img/icones/explorai-icone-{forme}.svg",
+      "favicon": "assets/img/explorai-favicon.png",
+      "police": "assets/fonts/{Famille}-{Graisse}.{woff2|ttf}"
+    }
+  }
+}

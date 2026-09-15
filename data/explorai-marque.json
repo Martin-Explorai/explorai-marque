@@ -1,0 +1,1959 @@
+{
+  "document": {
+    "titre": "Normes graphiques Explorai — source de vérité du dépôt explorai-marque",
+    "identifiant": "explorai-marque",
+    "version": "8.0",
+    "date_version": "2026-09-15",
+    "norme": "Normes graphiques Explorai v3",
+    "date_norme": "2026-09",
+    "langue": "fr-CA",
+    "statut": "normatif",
+    "depot": "https://github.com/Martin-Explorai/explorai-marque",
+    "url_site": "https://martin-explorai.github.io/explorai-marque/",
+    "url_brute": "https://raw.githubusercontent.com/Martin-Explorai/explorai-marque/main/",
+    "branche": "main",
+    "source_de_verite": "data/explorai-marque.json",
+    "generateur": "outils/construire.py",
+    "regle_de_derivation": "Ce fichier est la seule source de vérité du dépôt. Tous les autres fichiers de règles (regles/*.md, *.html, llms.txt, llms-full.txt, README.md, SKILL.md, data/explorai-actifs.json, data/explorai-jetons.json, data/explorai-index.json, assets/css/explorai-jetons.css, sitemap.xml, robots.txt) en sont générés par outils/construire.py. Ils ne se modifient jamais à la main : on modifie ce fichier, puis on relance le générateur.",
+    "arbitrage": "En cas de contradiction entre un fichier généré et data/explorai-marque.json, ce dernier s'applique et le fichier généré doit être reconstruit. En cas de contradiction entre data/explorai-marque.json et le document source des Normes graphiques v3, l'écart remonte au responsable de la marque avant toute production.",
+    "exemples_fictifs": "Les exemples chiffrés de ce fichier sont des données de démonstration, marquées « fictif ». Ils illustrent une règle et ne décrivent aucun mandat réel."
+  },
+  "sections": [
+    {
+      "id": "c00",
+      "slug": "identite-gouvernance",
+      "cle": "identite",
+      "titre": "Identité et gouvernance",
+      "resume": "Nom, signature, organisation, qui arbitre un écart, cycle de révision."
+    },
+    {
+      "id": "c01",
+      "slug": "logo",
+      "cle": "logo",
+      "titre": "Logo",
+      "resume": "Deux variantes d'emploi, zone de protection, mesures minimales, interdits, favicon."
+    },
+    {
+      "id": "c02",
+      "slug": "typographie",
+      "cle": "typographie",
+      "titre": "Typographie",
+      "resume": "DM Sans et IBM Plex Mono, trois niveaux de repli, échelle web, fichiers de police."
+    },
+    {
+      "id": "c03",
+      "slug": "palette",
+      "cle": "couleurs",
+      "titre": "Palette",
+      "resume": "Valeurs hexadécimales, rôle exclusif de chaque couleur, teintes dérivées, associations."
+    },
+    {
+      "id": "c04",
+      "slug": "couleur-en-usage",
+      "cle": "couleur_en_usage",
+      "titre": "Couleur en usage",
+      "resume": "Un accent par unité de lecture, rotation, exceptions, implémentation web."
+    },
+    {
+      "id": "c05",
+      "slug": "iconographie",
+      "cle": "iconographie",
+      "titre": "Iconographie",
+      "resume": "Neuf formes, leur sens, ce qu'elles ouvrent et n'ouvrent pas, correspondance par livrable."
+    },
+    {
+      "id": "c06",
+      "slug": "motif",
+      "cle": "motif",
+      "titre": "Motif",
+      "resume": "Emploi de la forme Exploration en fond : taille, position, couleur."
+    },
+    {
+      "id": "c07",
+      "slug": "tableaux",
+      "cle": "tableaux",
+      "titre": "Tableaux",
+      "resume": "En-tête bleu, alternance dans l'accent, aucun quadrillage, ligne de total."
+    },
+    {
+      "id": "c08",
+      "slug": "graphiques",
+      "cle": "graphiques",
+      "titre": "Graphiques",
+      "resume": "Ordre des séries, grille, axes, base à zéro, types admis, note de lecture."
+    },
+    {
+      "id": "c09",
+      "slug": "ecriture",
+      "cle": "ecriture",
+      "titre": "Écriture",
+      "resume": "Conventions typographiques du français, ton de voix."
+    },
+    {
+      "id": "c10",
+      "slug": "supports",
+      "cle": "supports",
+      "titre": "Supports",
+      "resume": "Règle commune, document, web : rayons, focus, survol, mouvement, densité."
+    },
+    {
+      "id": "c11",
+      "slug": "actifs",
+      "cle": "actifs",
+      "titre": "Actifs",
+      "resume": "Choisir une variante et un format, URL de téléchargement, insertion, nomenclature."
+    },
+    {
+      "id": "c12",
+      "slug": "document",
+      "cle": "document_gabarit",
+      "titre": "Gabarit de document",
+      "resume": "DOCX et PDF : page, rythme, onze styles nommés, types de page, polices, exemple de tableau."
+    },
+    {
+      "id": "c13",
+      "slug": "contenu-web",
+      "cle": "contenu_web",
+      "titre": "Contenu web",
+      "resume": "Hiérarchie des titres, texte long, mises en valeur, interactif, listes, médias, code."
+    },
+    {
+      "id": "c14",
+      "slug": "interface",
+      "cle": "interface",
+      "titre": "Interface d'application",
+      "resume": "Principes d'interface produit, composants, états, plancher de qualité."
+    },
+    {
+      "id": "c15",
+      "slug": "verification",
+      "cle": "verification",
+      "titre": "Vérification avant diffusion",
+      "resume": "Listes de contrôle : tout livrable, document, application."
+    },
+    {
+      "id": "c16",
+      "slug": "limites",
+      "cle": "limites",
+      "titre": "Limites",
+      "resume": "Ce que le dépôt ne contient pas, contenu non vérifié, points à compléter."
+    }
+  ],
+  "identite": {
+    "marque": {
+      "nom_texte_courant": "Explorai",
+      "graphie_interdite": [
+        "Explor.ai",
+        "Explor AI",
+        "EXPLORAI en texte courant",
+        "explorAI"
+      ],
+      "mot_symbole_du_logo": "explor.ai",
+      "note_graphie": "Le mot-symbole du logo épelle « explor.ai ». Cet écart est assumé et ne se propage jamais au texte courant.",
+      "signature": "L’IA au service de vos besoins d’affaires",
+      "regle_signature": "La signature reste indépendante du logo et n'est jamais verrouillée avec lui.",
+      "organisation": {
+        "description": "Firme montréalaise en intelligence artificielle et en développement logiciel pour les PME.",
+        "ville": "Montréal, Québec, Canada",
+        "courriel": "info@explor.ai",
+        "site_public": "www.explor.ai"
+      }
+    },
+    "entreprise": {
+      "statut_des_informations": "Repris du site public www.explor.ai. Non vérifié par ce dépôt : à confirmer auprès du responsable de la marque avant toute citation externe.",
+      "description": "Firme montréalaise en intelligence artificielle et en développement logiciel. Elle accompagne les PME dans l'identification, le développement et l'implantation de solutions adaptées à leurs défis d'affaires, du diagnostic initial jusqu'à la mise en production.",
+      "domaines_d_intervention": [
+        "ordonnancement de la production",
+        "extraction de plans et devis",
+        "automatisation administrative",
+        "traitement de courriels",
+        "prévision des ventes",
+        "agents d'IA générative"
+      ],
+      "demarche": [
+        {
+          "phase": "Diagnostic",
+          "contenu": "Ateliers, examen des données, cartographie des processus. Livrable : scénarios d'usage chiffrés et recommandation de priorité."
+        },
+        {
+          "phase": "Preuve de valeur",
+          "contenu": "Prototype sur les données réelles, critère de succès chiffré et fixé d'avance."
+        },
+        {
+          "phase": "Industrialisation",
+          "contenu": "Interface, intégrations, sécurité, surveillance des performances du modèle en production."
+        },
+        {
+          "phase": "Transfert",
+          "contenu": "Formation, documentation, plan d'évolution."
+        }
+      ],
+      "mandats_cites_publiquement": [
+        {
+          "client": "Métal Marquis",
+          "objet": "soudage assisté par l'IA"
+        },
+        {
+          "client": "American Biltrite",
+          "objet": "prévision des ventes sur l'historique de commandes"
+        },
+        {
+          "client": "Berga Recycling",
+          "objet": "prévision de l'offre et de la demande de matières"
+        },
+        {
+          "client": "Lithologiq",
+          "objet": "automatisation de l'analyse minéralogique"
+        }
+      ]
+    },
+    "gouvernance": {
+      "arbitre": "Responsable de la marque — un arbitre unique tranche tout écart : nouvelle couleur, nouvelle police, nouvel actif, exception sur un livrable client.",
+      "responsable_nomme": null,
+      "cycle_de_revision": "Semestriel, plus une révision ponctuelle dès qu'un nouveau type de livrable apparaît.",
+      "journal_des_versions": "Toute modification est consignée avec sa date et son motif.",
+      "regle": "Une demande de dérogation passe par le responsable avant la production, jamais après. Un écart accepté sans arbitrage devient une règle de fait au livrable suivant."
+    }
+  },
+  "logo": {
+    "principe": "Le logo ne se redessine pas, ne se recompose pas et ne se recolore pas. Deux variantes d'emploi, pas trois.",
+    "variantes": [
+      {
+        "cle": "bleu",
+        "nom": "Principale — bleu foncé",
+        "fichier": "assets/img/logo/explorai-logo-bleu.svg",
+        "fonds": [
+          "blanc",
+          "White Smoke #F6F6F6",
+          "toute teinte pâle",
+          "aplat vert #ACF127"
+        ],
+        "note": "Variante par défaut de tout document."
+      },
+      {
+        "cle": "blanc",
+        "nom": "Inversée — blanc",
+        "fichier": "assets/img/logo/explorai-logo-blanc.svg",
+        "fonds": [
+          "bleu foncé #231651",
+          "photographie sombre",
+          "aplat de couleur saturée",
+          "aplat rose #F127AC"
+        ],
+        "note": "Le rose reste un signal, pas un fond de signature."
+      },
+      {
+        "cle": "vert",
+        "nom": "Vert — hors emploi courant",
+        "fichier": "assets/img/logo/explorai-logo-vert.svg",
+        "fonds": [],
+        "note": "Fourni dans les actifs, mais le logo vert n'existe pas comme variante d'emploi courant. Sur aplat vert, employer la variante bleu foncé."
+      }
+    ],
+    "zone_de_protection": "Une fois la hauteur du logo, sur les quatre côtés, depuis le rectangle englobant. Aucun texte, aucun filet, aucune image dans cette zone. Elle prime sur la mise en page : si elle ne tient pas, le logo est trop grand.",
+    "mesures": [
+      {
+        "contexte": "Largeur minimale à l'écran",
+        "valeur": "90 px",
+        "remarque": "Sous ce seuil, le point du « .ai » se ferme."
+      },
+      {
+        "contexte": "Largeur minimale en impression",
+        "valeur": "25 mm",
+        "remarque": "Vérifier sur épreuve papier, pas à l'écran."
+      },
+      {
+        "contexte": "Couverture de document",
+        "valeur": "60 mm (2,5 po)",
+        "remarque": "Aligné à droite en pied de couverture."
+      },
+      {
+        "contexte": "Pied de page courant",
+        "valeur": "32 mm",
+        "remarque": "Facultatif : le pied de page textuel suffit."
+      },
+      {
+        "contexte": "En-tête du site web",
+        "valeur": "132 px, variante bleue",
+        "remarque": "Aligné sur la marge gauche."
+      },
+      {
+        "contexte": "Pied de page web",
+        "valeur": "150 px, variante blanche",
+        "remarque": "Sur fond bleu foncé."
+      },
+      {
+        "contexte": "Barre d'application",
+        "valeur": "104 px, variante blanche",
+        "remarque": "Exception au seuil de 90 px : contexte fixe vérifié à l'écran."
+      }
+    ],
+    "interdits": [
+      "Déformation",
+      "Rotation",
+      "Effet ou ombre",
+      "Contour ajouté",
+      "Recoloration hors des variantes fournies",
+      "Redimensionnement non proportionnel"
+    ],
+    "favicon": {
+      "fichiers": [
+        "assets/img/explorai-favicon.png",
+        "favicon.ico"
+      ],
+      "dessin": "Forme Exploration verte sur carré bleu foncé",
+      "regle": "Le mot-symbole n'est jamais réduit à 16 px."
+    }
+  },
+  "typographie": {
+    "principale": {
+      "nom": "DM Sans",
+      "usage": "Titres, sous-titres, texte courant.",
+      "graisses": [
+        400,
+        500,
+        600,
+        700
+      ],
+      "interlettrage": "Négatif sur les grands corps uniquement."
+    },
+    "secondaire": {
+      "nom": "IBM Plex Mono",
+      "usage": "Sur-titres, étiquettes, numérotation, chiffres de référence, légendes techniques.",
+      "interdit": "Jamais de paragraphe entier en monospace."
+    },
+    "niveaux_de_repli": [
+      {
+        "niveau": 1,
+        "nom": "Marque",
+        "sans": "DM Sans",
+        "mono": "IBM Plex Mono",
+        "quand": "Web, PDF, et tout fichier produit sur un poste équipé des deux polices."
+      },
+      {
+        "niveau": 2,
+        "nom": "Remplacement",
+        "sans": "Calibri",
+        "mono": "Consolas",
+        "quand": "Fichier bureautique modifiable diffusé hors de l'organisation."
+      },
+      {
+        "niveau": 3,
+        "nom": "Universel",
+        "sans": "Arial",
+        "mono": "Courier New",
+        "quand": "Destinataire dont l'environnement est inconnu, ou contrainte technique explicite."
+      }
+    ],
+    "interdits": [
+      "Mélanger deux niveaux : DM Sans avec Consolas, ou Calibri avec IBM Plex Mono.",
+      "Diffuser un fichier bureautique en polices de niveau 1 sans les intégrer au fichier ni passer au PDF.",
+      "Substituer par une police à empattements — comportement par défaut de Word, qui déforme la mise en page.",
+      "Employer l'italique : la charte ne le prévoit pas, ni pour les citations ni pour les légendes."
+    ],
+    "declaration_normative": {
+      "sans": "font-family: 'DM Sans', Calibri, Arial, sans-serif;",
+      "mono": "font-family: 'IBM Plex Mono', Consolas, 'Courier New', monospace;"
+    },
+    "declaration_web_etendue": {
+      "sans": "font-family: 'DM Sans', 'Calibri', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;",
+      "mono": "font-family: 'IBM Plex Mono', 'Consolas', 'SF Mono', Menlo, 'Courier New', monospace;",
+      "statut": "Addition propre au web, hors charte v3. À faire valider par le responsable de la marque."
+    },
+    "echelle_web": [
+      {
+        "role": "Affichage",
+        "police": "DM Sans 500",
+        "corps": "44 à 92 px",
+        "interlettrage": "-0,055 em"
+      },
+      {
+        "role": "Niveau 1",
+        "police": "DM Sans 500",
+        "corps": "38 à 68 px",
+        "interlettrage": "-0,045 em"
+      },
+      {
+        "role": "Niveau 2",
+        "police": "DM Sans 500",
+        "corps": "29 à 46 px",
+        "interlettrage": "-0,038 em"
+      },
+      {
+        "role": "Niveau 3",
+        "police": "DM Sans 500",
+        "corps": "21 à 28 px",
+        "interlettrage": "-0,025 em"
+      },
+      {
+        "role": "Introduction",
+        "police": "DM Sans 400",
+        "corps": "18 à 22 px",
+        "interlettrage": "0"
+      },
+      {
+        "role": "Texte courant",
+        "police": "DM Sans 400",
+        "corps": "17 px",
+        "interlettrage": "0"
+      },
+      {
+        "role": "Sur-titre",
+        "police": "IBM Plex Mono 500",
+        "corps": "11,5 px",
+        "interlettrage": "+0,11 em"
+      }
+    ],
+    "fichiers": {
+      "provenance": "Sous-ensembles latins publiés par Fontsource (paquets npm @fontsource/dm-sans 5.3.0 et @fontsource/ibm-plex-mono 5.3.0). WOFF2 d'origine; TTF convertis depuis ces WOFF2. Licence SIL Open Font License 1.1, jointe.",
+      "usage": "WOFF2 pour le web (@font-face dans assets/css/explorai-jetons.css). TTF pour une installation sur poste ou une intégration dans un fichier bureautique.",
+      "liste": [
+        {
+          "famille": "DM Sans",
+          "graisse": 400,
+          "woff2": "assets/fonts/DMSans-Regular.woff2",
+          "ttf": "assets/fonts/DMSans-Regular.ttf"
+        },
+        {
+          "famille": "DM Sans",
+          "graisse": 500,
+          "woff2": "assets/fonts/DMSans-Medium.woff2",
+          "ttf": "assets/fonts/DMSans-Medium.ttf"
+        },
+        {
+          "famille": "DM Sans",
+          "graisse": 600,
+          "woff2": "assets/fonts/DMSans-SemiBold.woff2",
+          "ttf": "assets/fonts/DMSans-SemiBold.ttf"
+        },
+        {
+          "famille": "DM Sans",
+          "graisse": 700,
+          "woff2": "assets/fonts/DMSans-Bold.woff2",
+          "ttf": "assets/fonts/DMSans-Bold.ttf"
+        },
+        {
+          "famille": "IBM Plex Mono",
+          "graisse": 400,
+          "woff2": "assets/fonts/IBMPlexMono-Regular.woff2",
+          "ttf": "assets/fonts/IBMPlexMono-Regular.ttf"
+        },
+        {
+          "famille": "IBM Plex Mono",
+          "graisse": 500,
+          "woff2": "assets/fonts/IBMPlexMono-Medium.woff2",
+          "ttf": "assets/fonts/IBMPlexMono-Medium.ttf"
+        }
+      ],
+      "licences": [
+        "assets/fonts/OFL-DMSans.txt",
+        "assets/fonts/OFL-IBMPlexMono.txt"
+      ]
+    }
+  },
+  "couleurs": {
+    "principe": "Chaque couleur a un rôle exclusif. Le rôle décide de l'emploi, pas la préférence.",
+    "marque": [
+      {
+        "cle": "bleu",
+        "nom": "Bleu foncé",
+        "hex": "#231651",
+        "variable_css": "--blue",
+        "role": "Fond dominant, titres, texte de structure. Couleur de référence de la marque.",
+        "accent": false
+      },
+      {
+        "cle": "vert",
+        "nom": "Vert",
+        "hex": "#ACF127",
+        "variable_css": "--green",
+        "role": "Accent d'énergie sur fond bleu : sur-titres, mot final d'un titre, icônes inversées. Marque les totaux et les synthèses.",
+        "accent": true
+      },
+      {
+        "cle": "turquoise",
+        "nom": "Turquoise",
+        "hex": "#2DDCF9",
+        "variable_css": "--cyan",
+        "role": "Accent de clarté : encadrements, séries de graphiques, texte secondaire sur bleu, contour de focus.",
+        "accent": true
+      },
+      {
+        "cle": "lavande",
+        "nom": "Lavande",
+        "hex": "#DA9FEC",
+        "variable_css": "--lavender",
+        "role": "Accent de nuance : encadrements, seconde série de graphiques.",
+        "accent": true
+      },
+      {
+        "cle": "rose",
+        "nom": "Rose vibrant",
+        "hex": "#F127AC",
+        "variable_css": "--pink",
+        "role": "Signal ponctuel. Encadrement et surlignage seulement — jamais en couleur de texte.",
+        "accent": true
+      },
+      {
+        "cle": "white_smoke",
+        "nom": "White Smoke",
+        "hex": "#F6F6F6",
+        "variable_css": "--paper",
+        "role": "Fond de page web et d'interface. Retiré des documents.",
+        "accent": false
+      }
+    ],
+    "etendue": [
+      {
+        "cle": "encre",
+        "nom": "Encre",
+        "hex": "#3B3550",
+        "variable_css": "--ink",
+        "role": "Texte courant sur fond clair. Moins dur que le bleu foncé sur de longs paragraphes."
+      },
+      {
+        "cle": "encre_pale",
+        "nom": "Encre pâle",
+        "hex": "#71658D",
+        "variable_css": "--ink-pale",
+        "role": "Texte secondaire, sur-titres, légendes, notes de lecture, pieds de page."
+      },
+      {
+        "cle": "voile",
+        "nom": "Voile",
+        "hex": "#D9D4E4",
+        "variable_css": "--veil",
+        "role": "Texte secondaire et filets sur fond bleu foncé."
+      },
+      {
+        "cle": "neutre",
+        "nom": "Neutre",
+        "hex": "#F2F1F5",
+        "variable_css": "--neutral",
+        "role": "Fond de bloc et de carte. Bleu de marque à 6 % sur blanc."
+      },
+      {
+        "cle": "filet",
+        "nom": "Filet",
+        "hex": "#DEDBE6",
+        "variable_css": "--rule",
+        "role": "Bordures, séparateurs, cadres de carte sur fond clair."
+      },
+      {
+        "cle": "grille",
+        "nom": "Grille",
+        "hex": "#EFEDF3",
+        "variable_css": "--grid",
+        "role": "Lignes de grille des graphiques, 0,8 pt, sur un seul axe."
+      },
+      {
+        "cle": "noir",
+        "nom": "Noir",
+        "hex": "#231F20",
+        "variable_css": "--black",
+        "role": "Impression technique et supports en noir seul. Pas en usage courant."
+      },
+      {
+        "cle": "blanc",
+        "nom": "Blanc",
+        "hex": "#FFFFFF",
+        "variable_css": "--white",
+        "role": "Fond de carte, de tableau et de graphique."
+      }
+    ],
+    "teintes_derivees": {
+      "principe": "Deux teintes seulement par accent, calculées sur blanc. Elles servent les tableaux, les mises en évidence et les fonds de carte.",
+      "10": {
+        "usage": "Alternance de lignes, fond de carte",
+        "turquoise": "#EAFCFE",
+        "vert": "#F7FEE9",
+        "lavande": "#FBF5FD",
+        "rose": "#FEE9F7"
+      },
+      "22": {
+        "usage": "Ligne de total, mise en évidence",
+        "turquoise": "#D1F7FE",
+        "vert": "#EDFCD0",
+        "lavande": "#F7EAFB",
+        "rose": "#FCD0ED"
+      }
+    },
+    "associations_autorisees": [
+      {
+        "paire": "bleu + vert",
+        "intention": "L'association principale. Énergie et affirmation."
+      },
+      {
+        "paire": "bleu + turquoise",
+        "intention": "Clarté, technique, données."
+      },
+      {
+        "paire": "bleu + lavande",
+        "intention": "Nuance, second plan, séquence."
+      }
+    ],
+    "decision_v3": "Le gris neutre #F6F6F6 est retiré des documents : tout fond neutre y est une déclinaison pâle du bleu de marque. Il reste en usage comme fond de page web et d'interface."
+  },
+  "couleur_en_usage": {
+    "regles": [
+      {
+        "id": "R1",
+        "enonce": "Un accent par unité de lecture : une section, un tableau, un graphique. Le bleu foncé et les neutres ne comptent pas comme accents."
+      },
+      {
+        "id": "R2",
+        "enonce": "Rotation dans l'ordre : turquoise, puis vert, puis lavande, puis rose. La rotation suit l'ordre des sections."
+      },
+      {
+        "id": "R3",
+        "enonce": "Le vert marque les totaux et les synthèses. Dans un document chiffré, il est réservé aux lignes de total, aux sommaires et aux pages de synthèse. C'est l'exception à la rotation."
+      },
+      {
+        "id": "R4",
+        "enonce": "Le rose reste un signal : encadrement, surlignage, option non retenue, point d'attention. Jamais un texte, jamais un aplat de fond étendu."
+      },
+      {
+        "id": "R5",
+        "enonce": "Le fond bleu foncé inverse les rôles : l'accent devient le vert, le texte secondaire passe au voile, les encadrements passent au vert ou au turquoise."
+      }
+    ],
+    "implementation_web": {
+      "attribut": "data-accent",
+      "valeurs": [
+        "cyan",
+        "green",
+        "lavender",
+        "pink"
+      ],
+      "effet": "Redéfinit `--accent`, `--accent-10` et `--accent-22` pour la section : encadré, filet, alternance de tableau, ligne de total, surlignage et badges suivent. Règles fournies dans `assets/css/explorai-jetons.css`.",
+      "exemple": "<section data-accent=\"green\"> … </section>"
+    },
+    "a_faire": [
+      "Un seul accent par section, appliqué à l'encadré, au tableau et au graphique de cette section.",
+      "Le rose en encadrement d'un point d'attention, une fois par document."
+    ],
+    "a_eviter": [
+      "Un encadré turquoise à côté d'un tableau vert dans la même section : deux codes couleur pour une seule unité de lecture.",
+      "Le rose en aplat de fond sous un paragraphe, ou en couleur de texte."
+    ]
+  },
+  "iconographie": {
+    "principe": "L'icône n'illustre pas la section : elle la repère. Une forme veut dire une seule chose, dans tous les livrables.",
+    "nombre_de_formes": 9,
+    "variantes_de_couleur": [
+      "bleu",
+      "vert",
+      "blanc",
+      "couleur héritée (currentColor)"
+    ],
+    "regles": [
+      {
+        "id": "COULEUR_CLAIR",
+        "enonce": "Sur fond clair : variante bleu foncé. Aucune recoloration hors des variantes fournies."
+      },
+      {
+        "id": "COULEUR_BLEU",
+        "enonce": "Sur fond bleu foncé : variante verte. La variante blanche est réservée aux aplats de couleur saturée."
+      },
+      {
+        "id": "TAILLE",
+        "enonce": "Repère de titre : 7 mm de haut en document, 48 à 80 px à l'écran. En motif de composition : sans limite haute, mais hors de la zone de texte."
+      },
+      {
+        "id": "PROPORTION",
+        "enonce": "Jamais étirée. Redimensionnement proportionnel uniquement, comme le logo."
+      },
+      {
+        "id": "UNICITE",
+        "enonce": "Une forme par section. Deux formes différentes dans un même titre annulent la fonction de repère."
+      },
+      {
+        "id": "REPETITION",
+        "enonce": "La même forme peut servir deux sections apparentées. Elle ne peut pas servir deux sections sans lien."
+      },
+      {
+        "id": "EXCLUSIVITE",
+        "enonce": "Exploration est la seule forme admise en motif de fond. Sur une page où elle sert de motif, elle ne sert pas de repère de section."
+      },
+      {
+        "id": "ARBITRAGE",
+        "enonce": "La table de correspondance prime sur l'intuition du rédacteur. Une section absente se rattache à la ligne la plus proche; sinon la demande passe par le responsable de la marque."
+      }
+    ],
+    "formes": [
+      {
+        "cle": "apprentissage",
+        "nom": "Apprentissage",
+        "geometrie": "Trois volumes croissants, décalés en escalier ascendant.",
+        "sens": "La progression, technique ou organisationnelle.",
+        "ouvre": [
+          "montée en compétence",
+          "maturité numérique",
+          "formation",
+          "performance d'un modèle dans le temps",
+          "ouverture de section"
+        ],
+        "n_ouvre_pas": [
+          "un constat figé",
+          "un état sans évolution"
+        ],
+        "exemple": "Rapport de suivi à six mois : ce que le modèle et les équipes ont appris depuis la mise en service."
+      },
+      {
+        "cle": "consultation",
+        "nom": "Consultation",
+        "geometrie": "Deux bulles de dialogue décalées, tournées l'une vers l'autre.",
+        "sens": "L'échange entre deux parties, d'égal à égal.",
+        "ouvre": [
+          "introduction",
+          "clôture",
+          "contact",
+          "citation et témoignage",
+          "compte rendu d'atelier"
+        ],
+        "n_ouvre_pas": [
+          "une section de contenu au milieu du document"
+        ],
+        "exemple": "Page de clôture d'une offre de service, et bloc de témoignage client."
+      },
+      {
+        "cle": "accompagnement",
+        "nom": "Accompagnement",
+        "geometrie": "Quatre parallélogrammes en foulée décalée, deux en haut, deux en bas.",
+        "sens": "Avancer à deux, au même rythme.",
+        "ouvre": [
+          "démarche",
+          "phases",
+          "échéancier",
+          "gouvernance",
+          "plan de transfert"
+        ],
+        "n_ouvre_pas": [
+          "un constat",
+          "un résultat"
+        ],
+        "exemple": "Section « Notre démarche en quatre phases » d'une offre."
+      },
+      {
+        "cle": "deploiement",
+        "nom": "Déploiement",
+        "geometrie": "Un grand triangle directionnel doublé d'un petit, même orientation.",
+        "sens": "Sortir de l'atelier et entrer en production.",
+        "ouvre": [
+          "livraison",
+          "mise en service",
+          "intégration technique",
+          "exploitation",
+          "supports et formats"
+        ],
+        "n_ouvre_pas": [
+          "la conception",
+          "le développement"
+        ],
+        "exemple": "Section « Mise en service » d'une offre de service ou d'un rapport de livraison."
+      },
+      {
+        "cle": "exploration",
+        "nom": "Exploration",
+        "geometrie": "Quatre faisceaux inégaux partant d'un même point.",
+        "sens": "Chercher dans plusieurs directions.",
+        "ouvre": [
+          "sommaire",
+          "table des matières",
+          "couverture",
+          "veille",
+          "inventaire de références"
+        ],
+        "n_ouvre_pas": [
+          "une conclusion",
+          "une recommandation"
+        ],
+        "exemple": "Table des matières d'un diagnostic numérique. Seule forme admise en motif de fond."
+      },
+      {
+        "cle": "innovation",
+        "nom": "Innovation",
+        "geometrie": "Six branches à angles irréguliers rayonnant d'un centre.",
+        "sens": "La rencontre de disciplines.",
+        "ouvre": [
+          "entreprise",
+          "équipe",
+          "valeurs",
+          "positionnement",
+          "partenariat",
+          "recherche"
+        ],
+        "n_ouvre_pas": [
+          "une section technique"
+        ],
+        "exemple": "Section « À propos d'Explorai » d'une offre de service."
+      },
+      {
+        "cle": "plus",
+        "nom": "Plus",
+        "geometrie": "Une croix symétrique à angles arrondis. La seule forme symétrique de la série.",
+        "sens": "La combinaison sans hiérarchie.",
+        "ouvre": [
+          "catalogue de services",
+          "options",
+          "conditions",
+          "modules complémentaires"
+        ],
+        "n_ouvre_pas": [
+          "un résultat",
+          "un gain"
+        ],
+        "exemple": "Grille tarifaire modulaire. En petit format, opérateur entre deux éléments nommés."
+      },
+      {
+        "cle": "financement",
+        "nom": "Financement",
+        "geometrie": "Trois volumes arrondis échelonnés en diagonale, du plus petit au plus grand.",
+        "sens": "La croissance d'une valeur, continue et non par bonds.",
+        "ouvre": [
+          "investissement",
+          "tarification",
+          "récapitulatif",
+          "rendement",
+          "demande de subvention",
+          "données chiffrées"
+        ],
+        "n_ouvre_pas": [
+          "la parole et le témoignage, qui reviennent à Consultation"
+        ],
+        "exemple": "Récapitulatif financier d'une offre, et tout tableau de données chiffrées."
+      },
+      {
+        "cle": "transformation",
+        "nom": "Transformation",
+        "geometrie": "Deux volumes triangulaires opposés, joints par la pointe, le second plus grand.",
+        "sens": "Le passage d'un état à un autre.",
+        "ouvre": [
+          "constat",
+          "diagnostic",
+          "analyse de l'existant",
+          "conduite du changement",
+          "étude de cas"
+        ],
+        "n_ouvre_pas": [
+          "la méthode, qui revient à Accompagnement"
+        ],
+        "exemple": "Page « Ce que nous avons observé à l'atelier » d'un diagnostic."
+      }
+    ],
+    "application_livrables": [
+      {
+        "livrable": "Offre de service",
+        "section": "Sommaire",
+        "forme": "exploration"
+      },
+      {
+        "livrable": "Offre de service",
+        "section": "Votre situation, votre contexte",
+        "forme": "transformation"
+      },
+      {
+        "livrable": "Offre de service",
+        "section": "Solution proposée",
+        "forme": "deploiement"
+      },
+      {
+        "livrable": "Offre de service",
+        "section": "Démarche en quatre phases",
+        "forme": "accompagnement"
+      },
+      {
+        "livrable": "Offre de service",
+        "section": "Investissement et récapitulatif",
+        "forme": "financement"
+      },
+      {
+        "livrable": "Offre de service",
+        "section": "Services complémentaires",
+        "forme": "plus"
+      },
+      {
+        "livrable": "Offre de service",
+        "section": "À propos d'Explorai",
+        "forme": "innovation"
+      },
+      {
+        "livrable": "Offre de service",
+        "section": "Page de clôture et coordonnées",
+        "forme": "consultation"
+      },
+      {
+        "livrable": "Diagnostic numérique",
+        "section": "Ce que nous avons observé",
+        "forme": "transformation"
+      },
+      {
+        "livrable": "Diagnostic numérique",
+        "section": "Plan de montée en compétence",
+        "forme": "apprentissage"
+      },
+      {
+        "livrable": "Rapport de suivi",
+        "section": "Performance du modèle à six mois",
+        "forme": "apprentissage"
+      },
+      {
+        "livrable": "Demande de subvention",
+        "section": "Budget et contribution demandée",
+        "forme": "financement"
+      },
+      {
+        "livrable": "Compte rendu d'atelier",
+        "section": "Ouverture et participants",
+        "forme": "consultation"
+      },
+      {
+        "livrable": "Contrat-cadre",
+        "section": "Grille tarifaire modulaire",
+        "forme": "plus"
+      },
+      {
+        "livrable": "Étude de cas publiée",
+        "section": "Avant et après",
+        "forme": "transformation"
+      }
+    ]
+  },
+  "motif": {
+    "forme": "exploration",
+    "principe": "Le motif est la forme Exploration recadrée en bord de page, derrière rien. Sa force vient de sa retenue.",
+    "regles": [
+      "Réservé aux couvertures, aux pages de clôture et aux fonds de section. Jamais sur une page de contenu.",
+      "Largeur comprise entre 20 % et 45 % de la largeur de la page.",
+      "Débord autorisé sur un ou deux bords.",
+      "Distance minimale au texte : la moitié de la largeur du motif. Aucun texte par-dessus.",
+      "Opacité pleine sur fond bleu. Pas d'ombre, pas de dégradé, pas de flou.",
+      "Un seul motif par page, et jamais deux dans la même section.",
+      "Couleur : vert sur fond bleu, bleu sur fond clair. Aucune autre."
+    ],
+    "interdits": [
+      "Le motif entier et centré derrière un paragraphe, à faible opacité — c'est un filigrane, la charte n'en prévoit pas."
+    ]
+  },
+  "tableaux": {
+    "regles": [
+      {
+        "element": "En-tête",
+        "traitement": "Aplat bleu foncé, texte blanc en demi-gras, sans bordure",
+        "valeur": "#231651"
+      },
+      {
+        "element": "Lignes",
+        "traitement": "Alternance blanc / teinte de l'accent à 10 %",
+        "valeur": "#FFFFFF + teinte 10 %"
+      },
+      {
+        "element": "Filets internes",
+        "traitement": "Aucun : l'alternance remplace le quadrillage",
+        "valeur": null
+      },
+      {
+        "element": "Ligne de total",
+        "traitement": "Teinte de l'accent à 22 %, encadrement complet dans l'accent",
+        "valeur": "1,25 pt"
+      },
+      {
+        "element": "Alignement",
+        "traitement": "Libellés à gauche, valeurs numériques à droite",
+        "valeur": null
+      },
+      {
+        "element": "Accent",
+        "traitement": "Un seul par tableau, selon la rotation",
+        "valeur": null
+      }
+    ],
+    "regle_web": "Le tableau défile horizontalement dans son cadre plutôt que de réduire le corps du texte. Les en-têtes triables portent un indicateur d'ordre en vert."
+  },
+  "graphiques": {
+    "parametres": [
+      {
+        "parametre": "Ordre des séries",
+        "valeur": "Turquoise #2DDCF9, lavande #DA9FEC, vert #ACF127, rose #F127AC"
+      },
+      {
+        "parametre": "Composition d'un total",
+        "valeur": "Bleu foncé pour la part principale, vert pour la part secondaire"
+      },
+      {
+        "parametre": "Fond",
+        "valeur": "Blanc plein. Jamais transparent, jamais coloré"
+      },
+      {
+        "parametre": "Grille",
+        "valeur": "#EFEDF3, 0,8 pt, sur un seul axe"
+      },
+      {
+        "parametre": "Axes",
+        "valeur": "#DEDBE6. Cadre supérieur et droit supprimés"
+      },
+      {
+        "parametre": "Texte d'axe et de légende",
+        "valeur": "DM Sans 9 pt #71658D"
+      },
+      {
+        "parametre": "Étiquettes de valeur",
+        "valeur": "DM Sans 8,5 pt demi-gras #231651"
+      },
+      {
+        "parametre": "Base des barres",
+        "valeur": "Zéro obligatoire. Aucune échelle tronquée"
+      },
+      {
+        "parametre": "Anneau",
+        "valeur": "Épaisseur 42 % du rayon, séparation blanche 2 pt, total au centre"
+      },
+      {
+        "parametre": "Résolution d'export",
+        "valeur": "200 ppp minimum pour l'impression"
+      }
+    ],
+    "types": [
+      {
+        "type": "Barres horizontales",
+        "usage": "Comparer des grandeurs entre catégories nommées. Accueille les libellés longs."
+      },
+      {
+        "type": "Barres empilées",
+        "usage": "Montrer une composition à l'intérieur d'un total."
+      },
+      {
+        "type": "Anneau",
+        "usage": "Répartir un total en parts. Quatre segments au maximum."
+      },
+      {
+        "type": "Barres groupées",
+        "usage": "Comparer deux séries sur les mêmes catégories."
+      },
+      {
+        "type": "Courbe cumulative",
+        "usage": "Suivre une progression le long d'une séquence."
+      },
+      {
+        "type": "Nuage de points",
+        "usage": "Vérifier la relation entre deux variables."
+      }
+    ],
+    "regle_de_livraison": "Tout graphique porte un titre en deux niveaux — l'étiquette du type en monospace, puis en clair ce que le graphique montre — et une note de lecture. Un graphique sans note de lecture ne part pas chez un client."
+  },
+  "ecriture": {
+    "conventions": [
+      {
+        "cas": "Symbole monétaire",
+        "regle": "Après le nombre, espace insécable",
+        "exemple": "166 250 $"
+      },
+      {
+        "cas": "Pourcentage",
+        "regle": "Espace insécable avant le signe",
+        "exemple": "47 %"
+      },
+      {
+        "cas": "Séparateur de milliers",
+        "regle": "Espace fine insécable, jamais la virgule",
+        "exemple": "1 538"
+      },
+      {
+        "cas": "Décimale",
+        "regle": "Virgule",
+        "exemple": "0,75 po"
+      },
+      {
+        "cas": "Guillemets",
+        "regle": "Guillemets français, avec espaces insécables",
+        "exemple": "« ainsi »"
+      },
+      {
+        "cas": "Incise",
+        "regle": "Tiret cadratin, espacé",
+        "exemple": "un choix — le bon — reste discutable"
+      },
+      {
+        "cas": "Heures",
+        "regle": "H majuscule, espace insécable",
+        "exemple": "860 H"
+      },
+      {
+        "cas": "Titres",
+        "regle": "Capitale à la première lettre seulement",
+        "exemple": "Synthèse financière consolidée"
+      },
+      {
+        "cas": "Majuscules accentuées",
+        "regle": "Obligatoires, y compris en capitales",
+        "exemple": "ÉCHÉANCIER"
+      },
+      {
+        "cas": "Sur-titres",
+        "regle": "Capitales, monospace, interlettrage ouvert",
+        "exemple": "05 / SYNTHÈSE"
+      }
+    ],
+    "ton_de_voix": [
+      "Phrases courtes, verbes actifs, sujet nommé.",
+      "Pas de superlatif sans chiffre derrière.",
+      "Le vocabulaire du client, pas celui de la technologie.",
+      "Dire ce qu'on ne fait pas est aussi utile que dire ce qu'on fait."
+    ],
+    "caracteres": [
+      {
+        "caractere": "Espace insécable",
+        "unicode": "U+00A0",
+        "emploi": "Avant $, % et H; à l'intérieur des guillemets français; entre un nombre et son unité."
+      },
+      {
+        "caractere": "Espace fine insécable",
+        "unicode": "U+202F",
+        "emploi": "Séparateur de milliers."
+      },
+      {
+        "caractere": "Guillemets français",
+        "unicode": "U+00AB / U+00BB",
+        "emploi": "Toute citation."
+      },
+      {
+        "caractere": "Tiret cadratin",
+        "unicode": "U+2014",
+        "emploi": "Incise, espacée."
+      }
+    ]
+  },
+  "supports": {
+    "regle_commune": "Palette, polices, logo et conventions ne se négocient pas d'un support à l'autre. Seules la mise en page et la densité s'adaptent. Si une règle de support contredit une règle de marque, c'est la règle de marque qui s'applique.",
+    "document": {
+      "formats": [
+        "DOCX",
+        "PDF"
+      ],
+      "regles": "c12",
+      "resume": "Format de page, marges, rythme vertical, onze styles nommés, types de page, tableaux, polices, diffusion."
+    },
+    "web": {
+      "fond_de_page": "#F6F6F6",
+      "rayons": {
+        "petits_elements": "8 px",
+        "cartes": "14 px",
+        "blocs_pleine_largeur": "20 px",
+        "boutons_et_etiquettes": "999 px"
+      },
+      "focus": "Contour turquoise de 3 px, décalé de 3 px. Jamais supprimé.",
+      "survol": "Changement de couleur de bordure ou de fond, jamais de déplacement ni d'ombre portée : la charte ne prévoit aucune ombre.",
+      "mouvement": "Une seule animation : le remplissage des barres de graphique à l'entrée dans l'écran. Désactivée si le système le demande.",
+      "densite": {
+        "site": "Marges généreuses, 17 px de corps",
+        "application": "Densité maximale, 14 à 15 px"
+      },
+      "regles_detaillees": [
+        "c13",
+        "c14"
+      ]
+    }
+  },
+  "actifs": {
+    "principe": "Le fond décide de la variante, le support décide du format. Aucune recoloration hors des variantes fournies, dans aucun cas.",
+    "variante_selon_le_fond": [
+      {
+        "fond": "Blanc, White Smoke #F6F6F6, neutre #F2F1F5",
+        "logo": "bleu",
+        "icone": "bleu"
+      },
+      {
+        "fond": "Bleu foncé #231651",
+        "logo": "blanc",
+        "icone": "vert"
+      },
+      {
+        "fond": "Aplat vert #ACF127",
+        "logo": "bleu",
+        "icone": "bleu"
+      },
+      {
+        "fond": "Aplat rose #F127AC, aplat saturé",
+        "logo": "blanc",
+        "icone": "blanc"
+      },
+      {
+        "fond": "Photographie sombre",
+        "logo": "blanc",
+        "icone": "blanc"
+      },
+      {
+        "fond": "Composant dont la couleur change selon l'état (SVG en ligne)",
+        "logo": "—",
+        "icone": "heritee"
+      }
+    ],
+    "format_selon_le_support": [
+      {
+        "support": "Site web, application",
+        "format": "SVG",
+        "raison": "Net à toute densité d'écran."
+      },
+      {
+        "support": "Document Word",
+        "format": "SVG",
+        "raison": "Pris en charge depuis Office 2016; PNG en repli."
+      },
+      {
+        "support": "Gabarit de courriel, plateforme sociale",
+        "format": "PNG",
+        "raison": "Le vectoriel y est refusé ou mal rendu."
+      },
+      {
+        "support": "Impression en quadrichromie",
+        "format": "EPS",
+        "raison": "Non fourni — à produire."
+      },
+      {
+        "support": "Icône de site",
+        "format": "PNG + ICO",
+        "raison": "Forme Exploration verte sur carré bleu."
+      }
+    ],
+    "a_faire": [
+      "Employer le fichier tel quel, redimensionné proportionnellement.",
+      "Respecter la zone de protection du logo : une fois sa hauteur, sur les quatre côtés.",
+      "Télécharger depuis l'URL brute du manifeste (data/explorai-actifs.json, champ url_brute) : elle ne dépend pas de GitHub Pages."
+    ],
+    "a_eviter": [
+      "Recolorer un SVG en modifiant son attribut fill, sauf les neuf fichiers en couleur héritée.",
+      "Étirer, pivoter, ajouter un contour, une ombre ou un effet.",
+      "Recopier le tracé d'un SVG dans un autre fichier au lieu de référencer l'actif."
+    ],
+    "motifs_de_chemin": {
+      "logo": "assets/img/logo/explorai-logo-{bleu|blanc|vert}.{svg|png}",
+      "icone": "assets/img/icones/explorai-icone-{forme}-{bleu|vert|blanc}.{svg|png}",
+      "icone_couleur_heritee": "assets/img/icones/explorai-icone-{forme}.svg",
+      "favicon": "assets/img/explorai-favicon.png",
+      "police": "assets/fonts/{Famille}-{Graisse}.{woff2|ttf}"
+    },
+    "provenance": {
+      "logos": "Vectorisation des PNG fournis (potrace), recolorés selon la variante. Écart de silhouette mesuré < 0,15 % des pixels. Aucun original reçu à ce jour.",
+      "icones_bleu_vert_blanc": "Fichiers vectoriels d'origine reçus directement pour les neuf formes, dans les trois couleurs. Non vectorisés : référence la plus fidèle. Les PNG correspondants sont rendus depuis ces mêmes vecteurs, aux mêmes dimensions que les fichiers qu'ils remplacent.",
+      "icones_couleur_heritee": "Les neuf fichiers currentColor restent issus de la vectorisation initiale; aucun original n'a été reçu pour cette variante."
+    },
+    "usage_par_variante": {
+      "logo": {
+        "bleu": "Variante principale. Sur blanc, sur White Smoke et sur toute teinte pâle, y compris l'aplat vert. Variante par défaut de tout document.",
+        "blanc": "Variante inversée. Sur bleu foncé, photographie sombre et aplat de couleur saturée, y compris le rose.",
+        "vert": "Hors emploi courant. Fourni, mais sans usage admis : sur aplat vert, employer la variante bleu foncé."
+      },
+      "icone": {
+        "bleu": "Fond clair : blanc, White Smoke, neutre, aplat vert.",
+        "vert": "Fond bleu foncé #231651. Seule variante admise sur ce fond.",
+        "blanc": "Aplat de couleur saturée, ou photographie sombre.",
+        "heritee": "Usage en ligne dans le HTML : le fichier porte fill=\"currentColor\" et prend la couleur du texte environnant. Seule recoloration admise."
+      },
+      "favicon": "Icône de site. Forme Exploration verte sur carré bleu foncé."
+    },
+    "insertion": [
+      {
+        "contexte": "Page web — logo d'en-tête, 132 px",
+        "langage": "html",
+        "code": "<img src=\"https://martin-explorai.github.io/explorai-marque/assets/img/logo/explorai-logo-bleu.svg\"\n     alt=\"Explorai\" width=\"132\">"
+      },
+      {
+        "contexte": "Page web — icône de section sur fond clair",
+        "langage": "html",
+        "code": "<img src=\"https://martin-explorai.github.io/explorai-marque/assets/img/icones/explorai-icone-accompagnement-bleu.svg\"\n     alt=\"\" width=\"62\">"
+      },
+      {
+        "contexte": "Couleur héritée — SVG collé en ligne",
+        "langage": "html",
+        "code": "<span style=\"color:#2DDCF9\">\n  <!-- contenu de explorai-icone-plus.svg, fill=\"currentColor\" -->\n  <svg viewBox=\"0 0 401 401\">…</svg>\n</span>"
+      },
+      {
+        "contexte": "Motif de couverture en CSS, fond bleu",
+        "langage": "css",
+        "code": ".couverture {\n  background: #231651\n    url(\"https://martin-explorai.github.io/explorai-marque/assets/img/icones/explorai-icone-exploration-vert.svg\")\n    no-repeat right -80px bottom -60px / 38%;\n}"
+      },
+      {
+        "contexte": "Jetons et polices dans une page web",
+        "langage": "html",
+        "code": "<link rel=\"stylesheet\"\n      href=\"https://martin-explorai.github.io/explorai-marque/assets/css/explorai-jetons.css\">"
+      },
+      {
+        "contexte": "Téléchargement en ligne de commande",
+        "langage": "bash",
+        "code": "curl -LO https://raw.githubusercontent.com/Martin-Explorai/explorai-marque/main/assets/img/logo/explorai-logo-bleu.svg"
+      },
+      {
+        "contexte": "Document Word",
+        "langage": "texte",
+        "code": "Insertion > Images > le fichier SVG. Le PNG du même dossier sert de repli si le logiciel refuse le vectoriel."
+      }
+    ],
+    "nomenclature": {
+      "fichier_du_depot": {
+        "regle": "Nom stable, sans numéro de version. La version se lit dans data/explorai-marque.json (document.version), dans le fichier VERSION, dans l'en-tête de chaque fichier généré et dans les étiquettes Git (v8.0).",
+        "exemples": [
+          "data/explorai-marque.json",
+          "assets/css/explorai-jetons.css",
+          "regles/c03-palette.md"
+        ],
+        "raison": "Une URL stable reste valide d'une version à l'autre pour les agents et les skills qui la référencent. Le cache navigateur est contourné par un paramètre ?v= dans les pages HTML."
+      },
+      "actif_de_marque": {
+        "regle": "nom-type-variante, sans version",
+        "exemples": [
+          "explorai-logo-bleu.svg",
+          "explorai-icone-exploration-vert.svg",
+          "explorai-favicon.png"
+        ],
+        "raison": "Un actif change de dessin, pas de millésime."
+      },
+      "section_de_regles": {
+        "regle": "cNN-sujet, identifiant cNN stable",
+        "exemples": [
+          "c04-couleur-en-usage.md",
+          "c04-couleur-en-usage.html"
+        ],
+        "raison": "L'identifiant cNN sert de référence courte et ne change pas si le titre change."
+      },
+      "archive": "explorai-marque.zip, contenant le dossier racine explorai-marque/."
+    }
+  },
+  "document_gabarit": {
+    "formats": [
+      "DOCX",
+      "PDF"
+    ],
+    "principe": "Un modèle Word avec styles nommés réduit les écarts de conformité plus efficacement que l'ajout de règles. Le rédacteur applique un style; il n'a pas à retenir une valeur d'interligne.",
+    "modele": "Aucun fichier DOTX n'est fourni. Les onze styles ci-dessous sont la spécification du modèle à produire; un générateur de DOCX les applique tels quels.",
+    "page": [
+      {
+        "parametre": "Format",
+        "valeur": "Lettre US, 8,5 × 11 po. A4 accepté à l'export européen."
+      },
+      {
+        "parametre": "Orientation",
+        "valeur": "Portrait. Le paysage est réservé aux annexes de tableaux larges."
+      },
+      {
+        "parametre": "Marges",
+        "valeur": "2,5 cm sur les quatre côtés."
+      },
+      {
+        "parametre": "Colonnes",
+        "valeur": "Une seule. Aucun texte courant sur deux colonnes."
+      },
+      {
+        "parametre": "Fond de page",
+        "valeur": "Blanc. Les pages bleues sont des pages entières, pas des fonds."
+      },
+      {
+        "parametre": "En-tête",
+        "valeur": "Logo bleu à gauche, titre du document à droite, filet #DEDBE6."
+      },
+      {
+        "parametre": "Pied de page",
+        "valeur": "Nom du client · numéro de page · date, en IBM Plex Mono."
+      }
+    ],
+    "rythme": [
+      {
+        "regle": "Rythme",
+        "enonce": "Interligne du corps : 1,5. Espace avant un titre : deux interlignes. Espace après : un demi. Aucun retrait de première ligne."
+      },
+      {
+        "regle": "Saut de page",
+        "enonce": "Chaque titre de niveau 1 ouvre une page. Un titre ne reste jamais seul en bas de page; un tableau ne se coupe jamais après sa ligne d'en-tête; une ligne de total n'est jamais séparée de son tableau."
+      },
+      {
+        "regle": "Numérotation",
+        "enonce": "La couverture et les intercalaires ne portent pas de numéro. La numérotation commence à la première page de contenu."
+      },
+      {
+        "regle": "Icône",
+        "enonce": "Une forme par section, en haut de la première page de la section, 7 mm de haut, selon la correspondance de la section c05."
+      },
+      {
+        "regle": "Accent",
+        "enonce": "Un accent par section, en rotation. Le récapitulatif financier fait exception : il est toujours en vert."
+      },
+      {
+        "regle": "Longueur de ligne",
+        "enonce": "Inférieure à 80 caractères, obtenue par les marges de 2,5 cm."
+      }
+    ],
+    "styles": [
+      {
+        "style": "Titre de couverture",
+        "police": "DM Sans",
+        "graisse": 700,
+        "corps_pt": 32,
+        "interligne": 1.02,
+        "couleur": "#FFFFFF",
+        "emploi": "Couverture seulement"
+      },
+      {
+        "style": "Titre 1",
+        "police": "DM Sans",
+        "graisse": 600,
+        "corps_pt": 22,
+        "interligne": 1.1,
+        "couleur": "#231651",
+        "emploi": "Ouvre une section et une page"
+      },
+      {
+        "style": "Titre 2",
+        "police": "DM Sans",
+        "graisse": 600,
+        "corps_pt": 16,
+        "interligne": 1.2,
+        "couleur": "#231651",
+        "emploi": "Sous-section"
+      },
+      {
+        "style": "Titre 3",
+        "police": "DM Sans",
+        "graisse": 600,
+        "corps_pt": 12.5,
+        "interligne": 1.25,
+        "couleur": "#231651",
+        "emploi": "Regroupe des paragraphes"
+      },
+      {
+        "style": "Introduction",
+        "police": "DM Sans",
+        "graisse": 400,
+        "corps_pt": 12,
+        "interligne": 1.45,
+        "couleur": "#3B3550",
+        "emploi": "Premier paragraphe d'une section"
+      },
+      {
+        "style": "Corps",
+        "police": "DM Sans",
+        "graisse": 400,
+        "corps_pt": 10.5,
+        "interligne": 1.5,
+        "couleur": "#3B3550",
+        "emploi": "Texte courant"
+      },
+      {
+        "style": "Liste à puces",
+        "police": "DM Sans",
+        "graisse": 400,
+        "corps_pt": 10.5,
+        "interligne": 1.45,
+        "couleur": "#3B3550",
+        "emploi": "Puce dans l'accent de la section"
+      },
+      {
+        "style": "Tableau",
+        "police": "DM Sans",
+        "graisse": 400,
+        "corps_pt": 9.5,
+        "interligne": 1.35,
+        "couleur": "#3B3550",
+        "emploi": "Cellules; l'en-tête passe en 600 blanc"
+      },
+      {
+        "style": "Légende",
+        "police": "DM Sans",
+        "graisse": 400,
+        "corps_pt": 8.5,
+        "interligne": 1.45,
+        "couleur": "#71658D",
+        "emploi": "Sous une image ou un graphique"
+      },
+      {
+        "style": "Sur-titre",
+        "police": "IBM Plex Mono",
+        "graisse": 500,
+        "corps_pt": 8,
+        "interligne": 1.5,
+        "couleur": "#71658D",
+        "emploi": "Capitales, interlettrage +0,11 em"
+      },
+      {
+        "style": "Pied de page",
+        "police": "IBM Plex Mono",
+        "graisse": 400,
+        "corps_pt": 7.5,
+        "interligne": 1.4,
+        "couleur": "#71658D",
+        "emploi": "Client · page · date"
+      }
+    ],
+    "types_de_page": [
+      {
+        "type": "Couverture",
+        "forme": "exploration",
+        "regle": "Fond bleu foncé pleine page, sur-titre vert, titre blanc en 32 pt, logo blanc de 60 mm aligné à droite en pied. Motif Exploration recadré dans l'angle. Aucun numéro de page."
+      },
+      {
+        "type": "Sommaire",
+        "forme": "exploration",
+        "regle": "Numéros de section en IBM Plex Mono, titres en 11 pt demi-gras, filet de séparation #DEDBE6."
+      },
+      {
+        "type": "Intercalaire de section",
+        "forme": "selon la section",
+        "regle": "Page bleue pleine, icône verte de la section, numéro en IBM Plex Mono vert. Pas de logo, pas de numéro de page."
+      },
+      {
+        "type": "Texte courant",
+        "forme": "selon la section",
+        "regle": "Titre 1, paragraphe d'introduction en 12 pt, corps en 10,5 pt, titres de niveau 3, encadré de mesure dans l'accent."
+      },
+      {
+        "type": "Section de constat",
+        "forme": "transformation",
+        "regle": "Les titres de niveau 3 remplacent une liste à puces : un enjeu qui demande deux phrases n'est pas une puce."
+      },
+      {
+        "type": "Listes à puces",
+        "forme": "selon la section",
+        "regle": "Puce dans l'accent de la section. Une idée par puce. Pas de point final quand l'élément n'est pas une phrase complète."
+      },
+      {
+        "type": "Démarche en cartes",
+        "forme": "accompagnement",
+        "regle": "Grille de deux cartes par deux, filet de carte #DEDBE6. Chaque phase porte sa durée en IBM Plex Mono."
+      },
+      {
+        "type": "Tableau de phase",
+        "forme": "financement",
+        "regle": "En-tête bleu, alternance dans la teinte 10 % de l'accent, ligne de total encadrée à 22 %. Libellés à gauche, valeurs à droite en chiffres tabulaires. Aucun filet interne."
+      },
+      {
+        "type": "Synthèse chiffrée",
+        "forme": "financement",
+        "regle": "Toujours en vert, quelle que soit la position dans la rotation."
+      },
+      {
+        "type": "Page de clôture",
+        "forme": "consultation",
+        "regle": "Seconde et dernière page bleue du document. Un seul motif par page, recadré dans l'angle."
+      }
+    ],
+    "regle_de_coherence": "Un total de phase se vérifie toujours à la main : heures × tarif. Un tableau dont la somme ne tombe pas juste coûte plus cher en crédibilité que l'écart lui-même.",
+    "polices": {
+      "comportement": "Les corps, les interlignes et les marges ne changent pas d'un niveau de police à l'autre. Seules les polices changent; la mise en page absorbe l'écart de chasse.",
+      "a_faire": [
+        "Diffuser en PDF dès que le destinataire n'a pas à modifier le document : le niveau 1 est alors garanti.",
+        "Si le DOCX doit rester modifiable : intégrer les polices au fichier, ou produire le document au niveau 2 dès le départ."
+      ],
+      "a_eviter": [
+        "Mélanger les niveaux : DM Sans avec Consolas, ou Calibri avec IBM Plex Mono.",
+        "Laisser Word substituer seul : sans repli déclaré, il choisit une police à empattements et déforme la mise en page."
+      ],
+      "note_web": "Dans un fichier bureautique, une seule police est nommée par style : la pile web étendue de la section c02 ne s'y applique pas."
+    },
+    "exemple_tableau": {
+      "statut": "fictif",
+      "titre": "Phase 2a — Preuve de valeur",
+      "accent": "rose",
+      "colonnes": [
+        "Activités",
+        "Tarif A",
+        "Tarif B",
+        "Sous-total"
+      ],
+      "alignement": [
+        "gauche",
+        "droite",
+        "droite",
+        "droite"
+      ],
+      "lignes": [
+        [
+          "Connecteur ERP et extraction des ordres",
+          "60 H",
+          "8 H",
+          "11 700 $"
+        ],
+        [
+          "Moteur d'ordonnancement, première version",
+          "90 H",
+          "12 H",
+          "17 550 $"
+        ],
+        [
+          "Interface de séquence et de validation",
+          "50 H",
+          "6 H",
+          "9 600 $"
+        ],
+        [
+          "Ateliers de calibrage des contraintes",
+          "—",
+          "24 H",
+          "5 400 $"
+        ]
+      ],
+      "total": [
+        "Total de la phase",
+        "200 H",
+        "50 H",
+        "44 250 $"
+      ],
+      "note": "Fictif. Tarif A 165 $/h, tarif B 225 $/h, valeurs de démonstration seulement. Chaque sous-total vérifie heures × tarif."
+    }
+  },
+  "contenu_web": {
+    "principe": "Chaque bloc suit la rotation d'accent de la section c04 : turquoise, vert, lavande, rose, puis retour au turquoise.",
+    "hierarchie": {
+      "regle": "Six niveaux de titre, et rien de plus. Au-delà, le lecteur perçoit du bruit typographique plutôt qu'une structure.",
+      "niveaux": [
+        {
+          "niveau": "Affichage",
+          "regle": "DM Sans 500, interlettrage −0,055 em. Réservé au premier écran d'une page."
+        },
+        {
+          "niveau": "H1",
+          "regle": "Un seul par page. Il nomme le sujet, pas la section."
+        },
+        {
+          "niveau": "H2",
+          "regle": "Ouvre une section. Toujours accompagné d'une icône de section et d'un sur-titre."
+        },
+        {
+          "niveau": "H3",
+          "regle": "Sous-section, ou titre de carte."
+        },
+        {
+          "niveau": "H4",
+          "regle": "Regroupe quelques paragraphes à l'intérieur d'une sous-section."
+        },
+        {
+          "niveau": "H5",
+          "regle": "Rare. Employé surtout dans la documentation technique."
+        },
+        {
+          "niveau": "H6 — sur-titre",
+          "regle": "IBM Plex Mono, capitales, interlettrage ouvert. C'est l'étiquette, pas le titre."
+        }
+      ]
+    },
+    "texte": [
+      {
+        "element": "Introduction",
+        "regle": "Se distingue par sa taille, pas par sa couleur."
+      },
+      {
+        "element": "Texte courant",
+        "regle": "Corps de 17 px, interligne 1,65, longueur de ligne inférieure à 68 caractères. Réglage par défaut de toute page."
+      },
+      {
+        "element": "Note de lecture",
+        "regle": "Encre pâle #71658D, 12,5 px. Précisions de source, notes de graphique, mentions légales."
+      }
+    ],
+    "deux_colonnes": [
+      "Réservée aux textes de référence parcourus plutôt que lus en continu : notes de méthode, historiques, annexes.",
+      "Jamais pour le corps principal d'un article web.",
+      "Repasse sur une seule colonne sous 900 px de largeur.",
+      "Les paragraphes ne se coupent pas entre deux colonnes. Aucun titre de niveau 2 ne commence à l'intérieur de la disposition.",
+      "L'accent de la section reste unique dans la disposition."
+    ],
+    "mises_en_valeur": [
+      {
+        "forme": "Citation détachée",
+        "regle": "Sort un passage du flux. Attribution nommée sous la citation."
+      },
+      {
+        "forme": "Encadré d'attention",
+        "regle": "Encadrement dans l'accent de la section. Signale un point sur lequel une décision est attendue. Jamais combiné avec un fond coloré."
+      },
+      {
+        "forme": "Encadré de recommandation",
+        "regle": "Filet supérieur dans l'accent de la section, fond neutre. Un fond coloré sous un texte courant fatigue la lecture."
+      },
+      {
+        "forme": "Surlignage",
+        "regle": "Dans l'accent de la section, au maximum une fois par page. Remplace le gras coloré, qui n'existe pas dans le système."
+      },
+      {
+        "forme": "Filet latéral",
+        "regle": "Marque une note de l'auteur : une précision utile hors du fil du texte."
+      }
+    ],
+    "tableaux_web": [
+      "Mêmes règles que la section c07.",
+      "En-têtes triables : la mise en forme ne bouge pas quand l'ordre change; l'indicateur d'ordre est en vert.",
+      "Le tableau défile horizontalement dans son cadre plutôt que de réduire le corps du texte.",
+      "Au-delà de quatre segments, un anneau cède la place à un tableau."
+    ],
+    "interactif": {
+      "principe": "L'interaction sert à cacher ce qui n'est pas encore utile.",
+      "composants": [
+        {
+          "composant": "Onglets",
+          "emploi": "Contenus parallèles de même nature, dont le lecteur n'en consulte qu'un."
+        },
+        {
+          "composant": "Accordéon",
+          "emploi": "Questions dont le lecteur ne consulte qu'une ou deux réponses."
+        },
+        {
+          "composant": "Filtres de liste",
+          "emploi": "Un seul filtre actif à la fois. L'option « Tout » reste toujours disponible."
+        }
+      ]
+    },
+    "listes": [
+      "Numéroter seulement ce qui est un ordre : étapes, phases, échéanciers. Une liste de caractéristiques n'est pas une séquence.",
+      "Une puce par idée, jamais deux phrases collées.",
+      "Pas de point final si l'élément n'est pas une phrase.",
+      "Parallélisme grammatical entre tous les éléments.",
+      "Liste de définitions pour un glossaire : terme, puis définition en une phrase."
+    ],
+    "medias": [
+      "Une image porte une légende, ou elle ne sert à rien.",
+      "La légende dit ce que l'image montre, pas ce qu'elle est.",
+      "Légende placée sous l'image, séparée par un filet, encre pâle, 13 px, jamais en italique.",
+      "Une image décorative porte un texte de remplacement vide (alt=\"\").",
+      "Le motif ferme une section, il n'en ouvre jamais une."
+    ],
+    "technique": [
+      "Une valeur citée dans une phrase prend la police IBM Plex Mono : la variable `--accent` vaut `#2DDCF9`.",
+      "Aucun paragraphe entier n'est composé en monospace.",
+      "Les blocs de code sont en IBM Plex Mono, sur fond neutre #F2F1F5.",
+      "Un badge d'état porte toujours un mot : la couleur seule ne transmet aucune information."
+    ]
+  },
+  "interface": {
+    "principe": "L'interface est calme, dense et lisible du premier coup d'œil : la marque s'y exprime par la structure, pas par la décoration.",
+    "principes": [
+      {
+        "id": "STRUCTURE",
+        "enonce": "Le bleu foncé porte la navigation, jamais le contenu. Barre d'application et élément actif du menu en bleu; la zone de travail reste blanche."
+      },
+      {
+        "id": "COULEUR",
+        "enonce": "Le vert signale l'état actif et la réussite. Un seul élément vert par écran."
+      },
+      {
+        "id": "DONNEE",
+        "enonce": "Le turquoise appartient aux chiffres : séries de graphiques, étiquettes de mesure, encadrement d'un panneau d'analyse."
+      },
+      {
+        "id": "ALERTE",
+        "enonce": "Le rose est réservé aux conflits et aux blocages. Il ne décore jamais une carte et ne signale jamais une simple nouveauté."
+      },
+      {
+        "id": "DENSITE",
+        "enonce": "Priorité à la densité sur le blanc : corps de 14 à 15 px. Les marges généreuses restent au site web."
+      }
+    ],
+    "validation_humaine": "Dans un écran de validation, la machine propose et l'humain confirme. L'interface rend le désaccord facile à exprimer.",
+    "composants": [
+      {
+        "composant": "Bouton principal",
+        "regle": "Un seul par écran. Il porte le verbe exact de ce qui va se produire : « Valider les 34 lignes », pas « Soumettre »."
+      },
+      {
+        "composant": "Boutons secondaire et discret",
+        "regle": "Pour les actions de second rang. Ils ne concurrencent pas le bouton principal."
+      },
+      {
+        "composant": "Sélecteur segmenté",
+        "regle": "Deux à quatre options qui changent la lecture de la même donnée. Au-delà, une liste déroulante."
+      },
+      {
+        "composant": "Champ de saisie",
+        "regle": "Étiquette au-dessus du champ, jamais à l'intérieur. Le texte d'aide explique le format attendu avant l'erreur. Le message d'erreur dit quoi corriger. On marque les champs facultatifs plutôt que d'employer un astérisque seul."
+      },
+      {
+        "composant": "Message d'état",
+        "regle": "Réussite en vert, blocage en rose. Chaque message nomme l'objet et la suite : « Deux ordres réclament le poste 4 à la même heure. »"
+      },
+      {
+        "composant": "État vide",
+        "regle": "Dit pourquoi la zone est vide et quand du contenu y apparaîtra, puis propose une action."
+      },
+      {
+        "composant": "Vignette de mesure",
+        "regle": "La mesure principale est en bleu foncé, une seule par écran. Les mesures d'appui sont sur fond blanc, cadre filet #DEDBE6."
+      },
+      {
+        "composant": "Tableau de données",
+        "regle": "En-têtes triables, valeurs numériques alignées à droite en chiffres tabulaires, ligne de total selon la section c07."
+      },
+      {
+        "composant": "Barre d'application",
+        "regle": "Fond bleu foncé, logo blanc de 104 px."
+      }
+    ],
+    "plancher_de_qualite": [
+      {
+        "critere": "Contraste et couleur",
+        "enonce": "Le vert et le turquoise ne portent jamais de texte sur fond blanc : leur contraste est insuffisant. Aucune information n'est transmise par la couleur seule — un état est toujours doublé d'un mot."
+      },
+      {
+        "critere": "Clavier",
+        "enonce": "Chaque action est atteignable au clavier, dans l'ordre de lecture. Le contour de focus est visible, turquoise, jamais supprimé."
+      },
+      {
+        "critere": "Densité et zoom",
+        "enonce": "L'interface reste utilisable à 200 % de zoom, sans défilement horizontal de la page. Les tableaux défilent dans leur cadre plutôt que de réduire la police."
+      },
+      {
+        "critere": "Mouvement",
+        "enonce": "Aucune animation décorative. Les transitions montrent seulement ce qui vient de changer et se désactivent si le système le demande."
+      }
+    ]
+  },
+  "verification": {
+    "tout_livrable": [
+      "Aucune couleur hors de la palette normée (section c03).",
+      "Un seul accent par unité de lecture (section c04).",
+      "Titres et texte courant en DM Sans, étiquettes en IBM Plex Mono, niveau de repli unique (section c02).",
+      "Logo présent, bonne variante selon le fond, non déformé (section c01).",
+      "Zone de protection du logo respectée (section c01).",
+      "Une seule forme d'icône par section, conforme à la correspondance (section c05).",
+      "Chaque graphique porte un titre en deux niveaux et une note de lecture (section c08).",
+      "Conventions d'écriture du français appliquées aux chiffres (section c09).",
+      "Nom de la marque écrit « Explorai » dans le texte courant (section c00)."
+    ],
+    "document": [
+      {
+        "point": "Format de sortie",
+        "enonce": "PDF par défaut, polices intégrées, hyperliens actifs. Le DOCX ne part que si le client doit annoter ou remplir."
+      },
+      {
+        "point": "Cohérence des chiffres",
+        "enonce": "Chaque total de phase est recalculé à la main et confronté au récapitulatif. Les heures du récapitulatif égalent la somme des phases."
+      },
+      {
+        "point": "Conventions d'écriture",
+        "enonce": "Espaces insécables devant %, $ et H. Séparateur de milliers en espace fine. Virgule décimale. Guillemets français."
+      },
+      {
+        "point": "Accents de section",
+        "enonce": "Un accent par section, en rotation. Le récapitulatif financier reste vert."
+      },
+      {
+        "point": "Ruptures de page",
+        "enonce": "Aucun titre seul en bas de page, aucun tableau coupé après sa ligne d'en-tête, aucune ligne de total séparée de son tableau."
+      },
+      {
+        "point": "Anonymisation",
+        "enonce": "Avant tout usage d'une offre comme exemple interne, le nom du client, les montants et les coordonnées sont remplacés — pas masqués."
+      }
+    ],
+    "application": "Plancher de qualité de la section c14, vérifié avant la mise en production au même titre que les tests fonctionnels."
+  },
+  "limites": {
+    "absent_du_depot": [
+      "Fichiers EPS en quadrichromie pour l'imprimerie. Le SVG couvre l'écran et l'impression numérique, il ne remplace pas un EPS.",
+      "Modèle bureautique DOTX. La section c12 en donne la spécification complète.",
+      "Fichiers de dessin d'origine des logos (voir provenance, section c11).",
+      "Aucune norme de présentation (PPTX) : ce type de support est hors du périmètre du dépôt depuis la version 8.0."
+    ],
+    "polices": [
+      "Les polices fournies sont des sous-ensembles latins (Fontsource). Elles couvrent le français, sauf l'espace fine insécable U+202F, que le logiciel rend avec une police de repli.",
+      "Pour une installation bureautique complète, les familles officielles DM Sans et IBM Plex Mono sont disponibles sur Google Fonts.",
+      "La pile web étendue (Segoe UI, Helvetica Neue, SF Mono, Menlo) est une addition propre au web, hors charte v3, à faire valider."
+    ],
+    "contenu_non_verifie": [
+      "Les mandats et les informations d'entreprise de la section c00 sont repris du site public explor.ai et ne sont pas vérifiés par ce dépôt.",
+      "Tout exemple marqué « fictif » (section c12 notamment) est une donnée de démonstration."
+    ],
+    "hypotheses_de_publication": [
+      "GitHub Pages publie la branche main depuis la racine du dépôt, à l'adresse https://martin-explorai.github.io/explorai-marque/.",
+      "Les URL brutes supposent la branche main."
+    ],
+    "note_de_production": "Logos : SVG obtenus par vectorisation des PNG fournis, puis recolorés selon les trois variantes. Écart de silhouette mesuré inférieur à 0,15 % des pixels — des reproductions fidèles, pas les fichiers de dessin d'origine. Icônes, variantes bleu, vert et blanc : fichiers vectoriels d'origine reçus directement pour les neuf formes — la référence la plus fidèle. Les PNG correspondants ont été rendus depuis ces mêmes vecteurs, aux mêmes dimensions que les fichiers remplacés. Seule la variante en couleur héritée (currentColor) des icônes reste vectorisée.",
+    "a_completer": [
+      "Nom, fonction et adresse du responsable de la marque.",
+      "Journal des versions publié.",
+      "Validation des polices web ajoutées entre les niveaux 2 et 3."
+    ]
+  },
+  "questions_frequentes": [
+    {
+      "question": "Quelles sont les couleurs de la marque ?",
+      "section": "c03",
+      "reponse": "Bleu foncé #231651, vert #ACF127, turquoise #2DDCF9, lavande #DA9FEC, rose vibrant #F127AC; White Smoke #F6F6F6 pour le fond web."
+    },
+    {
+      "question": "Combien d'accents dans une section ?",
+      "section": "c04",
+      "reponse": "Un seul, selon la rotation turquoise, vert, lavande, rose."
+    },
+    {
+      "question": "Quelle couleur pour les totaux et les synthèses ?",
+      "section": "c04",
+      "reponse": "Le vert, par exception à la rotation."
+    },
+    {
+      "question": "Comment employer le rose ?",
+      "section": "c04",
+      "reponse": "En signal : encadrement et surlignage. Jamais en texte, jamais en aplat de fond étendu."
+    },
+    {
+      "question": "Quelles polices ?",
+      "section": "c02",
+      "reponse": "DM Sans pour les titres et le texte, IBM Plex Mono pour les sur-titres, étiquettes et chiffres de référence. Repli : Calibri + Consolas, puis Arial + Courier New, sans mélange."
+    },
+    {
+      "question": "Quel fichier de logo ?",
+      "section": "c01",
+      "reponse": "Fond clair : explorai-logo-bleu.svg. Fond bleu ou saturé : explorai-logo-blanc.svg. Le logo vert n'a pas d'emploi courant."
+    },
+    {
+      "question": "Taille minimale et zone de protection du logo ?",
+      "section": "c01",
+      "reponse": "90 px à l'écran, 25 mm en impression; zone égale à une fois la hauteur du logo sur les quatre côtés."
+    },
+    {
+      "question": "Quelle icône pour quelle section ?",
+      "section": "c05",
+      "reponse": "Selon la table de correspondance : chaque forme ouvre certaines sections et en exclut d'autres."
+    },
+    {
+      "question": "Comment employer le motif ?",
+      "section": "c06",
+      "reponse": "Forme Exploration recadrée en bord de page, 20 à 45 % de la largeur, un seul par page, jamais sur une page de contenu."
+    },
+    {
+      "question": "Comment mettre en forme un tableau ?",
+      "section": "c07",
+      "reponse": "En-tête bleu foncé, alternance blanc / accent 10 %, aucun quadrillage, ligne de total à 22 % encadrée dans l'accent."
+    },
+    {
+      "question": "Comment mettre en forme un graphique ?",
+      "section": "c08",
+      "reponse": "Fond blanc, base à zéro, grille sur un seul axe, séries turquoise, lavande, vert, rose, note de lecture obligatoire."
+    },
+    {
+      "question": "Comment écrire les montants et les pourcentages ?",
+      "section": "c09",
+      "reponse": "166 250 $, 47 %, avec espaces insécables; guillemets « français »."
+    },
+    {
+      "question": "Comment écrire le nom de la marque ?",
+      "section": "c00",
+      "reponse": "« Explorai » en un seul mot dans le texte courant; le logo épelle « explor.ai »."
+    },
+    {
+      "question": "Quels styles pour un document Word ?",
+      "section": "c12",
+      "reponse": "Onze styles nommés, de Titre de couverture (DM Sans 700, 32 pt) à Pied de page (IBM Plex Mono 400, 7,5 pt)."
+    },
+    {
+      "question": "Quelles règles pour une interface ?",
+      "section": "c14",
+      "reponse": "Bleu pour la navigation, un seul élément vert par écran, turquoise pour les chiffres, rose pour les blocages, corps de 14 à 15 px."
+    },
+    {
+      "question": "Où télécharger un actif ?",
+      "section": "c11",
+      "reponse": "data/explorai-actifs.json donne, pour chaque fichier, son URL GitHub Pages (url) et son URL brute (url_brute)."
+    },
+    {
+      "question": "Qui tranche un écart à la charte ?",
+      "section": "c00",
+      "reponse": "Le responsable de la marque, avant la production."
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "$description": "Jetons de design Explorai, version 8.0 (2026-09-15). Format DTCG (Design Tokens Community Group). Fichier généré par outils/construire.py à partir de data/explorai-marque.json — ne pas modifier à la main.",
+  "couleur": {
+    "blue": {
+      "$type": "color",
+      "$value": "#231651",
+      "$description": "Bleu foncé — Fond dominant, titres, texte de structure. Couleur de référence de la marque."
+    },
+    "green": {
+      "$type": "color",
+      "$value": "#ACF127",
+      "$description": "Vert — Accent d'énergie sur fond bleu : sur-titres, mot final d'un titre, icônes inversées. Marque les totaux et les synthèses."
+    },
+    "cyan": {
+      "$type": "color",
+      "$value": "#2DDCF9",
+      "$description": "Turquoise — Accent de clarté : encadrements, séries de graphiques, texte secondaire sur bleu, contour de focus."
+    },
+    "lavender": {
+      "$type": "color",
+      "$value": "#DA9FEC",
+      "$description": "Lavande — Accent de nuance : encadrements, seconde série de graphiques."
+    },
+    "pink": {
+      "$type": "color",
+      "$value": "#F127AC",
+      "$description": "Rose vibrant — Signal ponctuel. Encadrement et surlignage seulement — jamais en couleur de texte."
+    },
+    "paper": {
+      "$type": "color",
+      "$value": "#F6F6F6",
+      "$description": "White Smoke — Fond de page web et d'interface. Retiré des documents."
+    },
+    "ink": {
+      "$type": "color",
+      "$value": "#3B3550",
+      "$description": "Encre — Texte courant sur fond clair. Moins dur que le bleu foncé sur de longs paragraphes."
+    },
+    "ink-pale": {
+      "$type": "color",
+      "$value": "#71658D",
+      "$description": "Encre pâle — Texte secondaire, sur-titres, légendes, notes de lecture, pieds de page."
+    },
+    "veil": {
+      "$type": "color",
+      "$value": "#D9D4E4",
+      "$description": "Voile — Texte secondaire et filets sur fond bleu foncé."
+    },
+    "neutral": {
+      "$type": "color",
+      "$value": "#F2F1F5",
+      "$description": "Neutre — Fond de bloc et de carte. Bleu de marque à 6 % sur blanc."
+    },
+    "rule": {
+      "$type": "color",
+      "$value": "#DEDBE6",
+      "$description": "Filet — Bordures, séparateurs, cadres de carte sur fond clair."
+    },
+    "grid": {
+      "$type": "color",
+      "$value": "#EFEDF3",
+      "$description": "Grille — Lignes de grille des graphiques, 0,8 pt, sur un seul axe."
+    },
+    "black": {
+      "$type": "color",
+      "$value": "#231F20",
+      "$description": "Noir — Impression technique et supports en noir seul. Pas en usage courant."
+    },
+    "white": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "$description": "Blanc — Fond de carte, de tableau et de graphique."
+    },
+    "cyan-10": {
+      "$type": "color",
+      "$value": "#EAFCFE",
+      "$description": "turquoise à 10 % — Alternance de lignes, fond de carte"
+    },
+    "green-10": {
+      "$type": "color",
+      "$value": "#F7FEE9",
+      "$description": "vert à 10 % — Alternance de lignes, fond de carte"
+    },
+    "lav-10": {
+      "$type": "color",
+      "$value": "#FBF5FD",
+      "$description": "lavande à 10 % — Alternance de lignes, fond de carte"
+    },
+    "pink-10": {
+      "$type": "color",
+      "$value": "#FEE9F7",
+      "$description": "rose à 10 % — Alternance de lignes, fond de carte"
+    },
+    "cyan-22": {
+      "$type": "color",
+      "$value": "#D1F7FE",
+      "$description": "turquoise à 22 % — Ligne de total, mise en évidence"
+    },
+    "green-22": {
+      "$type": "color",
+      "$value": "#EDFCD0",
+      "$description": "vert à 22 % — Ligne de total, mise en évidence"
+    },
+    "lav-22": {
+      "$type": "color",
+      "$value": "#F7EAFB",
+      "$description": "lavande à 22 % — Ligne de total, mise en évidence"
+    },
+    "pink-22": {
+      "$type": "color",
+      "$value": "#FCD0ED",
+      "$description": "rose à 22 % — Ligne de total, mise en évidence"
+    }
+  },
+  "police": {
+    "sans": {
+      "$type": "fontFamily",
+      "$value": [
+        "DM Sans",
+        "Calibri",
+        "Arial",
+        "sans-serif"
+      ],
+      "$description": "Pile normative, charte v3"
+    },
+    "mono": {
+      "$type": "fontFamily",
+      "$value": [
+        "IBM Plex Mono",
+        "Consolas",
+        "Courier New",
+        "monospace"
+      ],
+      "$description": "Pile normative, charte v3"
+    },
+    "sans-web": {
+      "$type": "fontFamily",
+      "$value": [
+        "DM Sans",
+        "Calibri",
+        "Segoe UI",
+        "Helvetica Neue",
+        "Arial",
+        "sans-serif"
+      ],
+      "$description": "Addition propre au web, hors charte v3. À faire valider par le responsable de la marque."
+    },
+    "mono-web": {
+      "$type": "fontFamily",
+      "$value": [
+        "IBM Plex Mono",
+        "Consolas",
+        "SF Mono",
+        "Menlo",
+        "Courier New",
+        "monospace"
+      ],
+      "$description": "Addition propre au web, hors charte v3. À faire valider par le responsable de la marque."
+    }
+  },
+  "graisse": {
+    "400": {
+      "$type": "fontWeight",
+      "$value": 400
+    },
+    "500": {
+      "$type": "fontWeight",
+      "$value": 500
+    },
+    "600": {
+      "$type": "fontWeight",
+      "$value": 600
+    },
+    "700": {
+      "$type": "fontWeight",
+      "$value": 700
+    }
+  },
+  "rayon": {
+    "petits-elements": {
+      "$type": "dimension",
+      "$value": "8px"
+    },
+    "cartes": {
+      "$type": "dimension",
+      "$value": "14px"
+    },
+    "blocs-pleine-largeur": {
+      "$type": "dimension",
+      "$value": "20px"
+    },
+    "boutons-et-etiquettes": {
+      "$type": "dimension",
+      "$value": "999px"
+    }
+  },
+  "focus": {
+    "$type": "border",
+    "$value": {
+      "color": "{couleur.cyan}",
+      "width": "3px",
+      "style": "solid"
+    },
+    "$description": "Contour turquoise de 3 px, décalé de 3 px. Jamais supprimé."
+  },
+  "accent-rotation": {
+    "$description": "Ordre de rotation des accents (section c04)",
+    "$type": "color",
+    "$value": [
+      "{couleur.cyan}",
+      "{couleur.green}",
+      "{couleur.lavender}",
+      "{couleur.pink}"
+    ]
+  }
+}
